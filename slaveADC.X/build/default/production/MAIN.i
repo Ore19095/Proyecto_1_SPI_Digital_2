@@ -2684,8 +2684,8 @@ typedef enum
 
 void spiInit(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
 void spiWrite(char);
-unsigned spiDataReady();
-char spiRead();
+unsigned spiDataReady(void);
+char spiRead(void);
 # 29 "main.c" 2
 
 # 1 "./ADC.h" 1
@@ -2705,7 +2705,12 @@ uint8_t readADC(uint8_t);
 
 
 
+
+
+
 uint8_t adcValue;
+uint8_t valor;
+char* cadena;
 
 void main(void) {
     ANSEL = 1;
@@ -2729,10 +2734,8 @@ void main(void) {
 
 void __attribute__((picinterrupt(("")))) isr(){
     if(PIR1bits.SSPIF ==1){
-        int valor = spiRead();
-        if(valor == 1){
-            spiWrite(adcValue);
-        }
         PIR1bits.SSPIF = 0;
-    }
+        valor = spiRead();
+        if(valor == 'A') spiWrite(adcValue);
+       }
 }

@@ -2684,8 +2684,8 @@ typedef enum
 
 void spiInit(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
 void spiWrite(char);
-unsigned spiDataReady();
-char spiRead();
+unsigned spiDataReady(void);
+char spiRead(void);
 # 29 "main.c" 2
 
 # 1 "./LCD8bits.h" 1
@@ -2743,8 +2743,11 @@ char UARTReadChar();
 
 uint8_t UARTReadString(char *buf, uint8_t max_length);
 # 31 "main.c" 2
-# 41 "main.c"
-char* uint8ToChar(uint8_t);
+# 43 "main.c"
+uint8_t valueADC;
+char* cadenaADC;
+
+char* adcToString(uint16_t);
 
 
 int main(){
@@ -2762,43 +2765,41 @@ int main(){
   LcdInit();
   UARTInit(9600,1);
 
-
-  uint8_t adc;
-  uint8_t counter;
-  uint8_t temp;
-
-  char* adcChar;
   LcdSetCursor(1,1);
   LcdWriteString("ADC: CONT: TEMP:");
   while(1){
       LcdSetCursor(2,1);
-      PORTA = ~ 1;
+      PORTA = 254;
 
-      spiWrite(1);
-      adc = spiRead();
-      adcChar = uint8ToChar(adc);
-      LcdWriteString(adcChar);
+      spiWrite('A');
+      valueADC = spiRead();
+
+      cadenaADC = adcToString(valueADC);
+      LcdWriteString(cadenaADC);
+      LcdWriteChar('V');
+
+
   }
 
 
   return 0;
 }
 
-char* uint8ToChar(uint8_t value){
-    char salida[4];
-    uint8_t temp;
+char* adcToString(uint16_t value){
+    char salida[5];
+    uint16_t digito;
 
-    temp = value/100;
+    value = value*1.96;
+    digito = value/100 ;
 
-    salida[0] = temp + 48;
+    salida[0] = digito + 48;
+    salida[1] = '.';
+    value -= digito*100;
 
-
-    value -= temp*100;
-
-    salida[1] = value/10 +48 ;
-    salida[2] = value % 10 + 48;
-
-    salida[3] = '\0';
-
+    digito = value/10;
+    salida[2] = digito +48;
+    digito = value % 10;
+    salida[3] = digito +48;
+    salida[4] = '\0';
     return salida;
 }

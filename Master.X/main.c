@@ -34,11 +34,16 @@
 
 // valor de los "comandos que se enviaran a cada pic slave
 
-#define GIVE_ADC 1
+#define GIVE_ADC    'A'
 #define GIVE_COUNTER 2
 #define GIVE_TEMP 3
+
+
+// lectura del adc
+uint8_t valueADC;
+char* cadenaADC;
 //-----------prototipos de funciones--------------------------- 
-char* uint8ToChar(uint8_t);
+char* adcToString(uint16_t);
 
 
 int main(){
@@ -56,44 +61,42 @@ int main(){
   LcdInit();
   UARTInit(9600,1);
   
-  // varibles para el adc 
-  uint8_t adc;
-  uint8_t counter;
-  uint8_t temp;
-  
-  char* adcChar;
   LcdSetCursor(1,1);
   LcdWriteString("ADC: CONT: TEMP:");
   while(1){
       LcdSetCursor(2,1); //inicio de segunda linea
-      PORTA = ~ 1; //RA0 en 1 
-      
+      PORTA = 254; //RA0 en 1 
+      //se recibe el valor del ADC y se convierte a voltaje;
       spiWrite(GIVE_ADC);
-      adc = spiRead(); // se lee el valor enviado
-      adcChar = uint8ToChar(adc);
-      LcdWriteString(adcChar);
+      valueADC = spiRead();
+      
+      cadenaADC = adcToString(valueADC);
+      LcdWriteString(cadenaADC);
+      LcdWriteChar('V');
+      
+      
   }
 
   
   return 0;
 }
 
-char* uint8ToChar(uint8_t value){
-    char salida[4]; //cadena que sera retornada
-    uint8_t temp;
+char* adcToString(uint16_t value){
+    char salida[5]; //cadena que sera retornada
+    uint16_t digito;
     
-    temp = value/100;
+    value = value*1.96; // se cambia de 0-255  a 0-500
+    digito = value/100 ; // unidad de voltaje
     
-    salida[0] = temp + 48;// se obtiene el valor del 3er digito, y se 
-            //pasa a su equivalente en ASCII
+    salida[0] = digito + 48;
+    salida[1] = '.';
+    value -= digito*100;
     
-    value -= temp*100;
-    
-    salida[1] = value/10 +48 ;
-    salida[2] = value % 10 + 48;
-    
-    salida[3] = '\0';
-    
+    digito = value/10; // decimas
+    salida[2] = digito +48;
+    digito = value % 10;
+    salida[3] = digito +48;
+    salida[4] = '\0';
     return salida;
 }
 

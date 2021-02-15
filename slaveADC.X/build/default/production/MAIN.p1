@@ -35,8 +35,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1478
 [; ;D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1478: extern volatile unsigned char TRISB __attribute__((address(0x086)));
 [v _TRISB `Vuc ~T0 @X0 0 e@134 ]
-"43 main.c
-[; ;main.c: 43:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+"48 main.c
+[; ;main.c: 48:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
 [c E1292 32 33 34 35 36 37 .. ]
 [n E1292 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
 [c E1300 0 128 .. ]
@@ -71,8 +71,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 553: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
 [v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
 "47 ./spi.h
-[; ;./spi.h: 47: char spiRead();
-[v _spiRead `(uc ~T0 @X0 0 e? ]
+[; ;./spi.h: 47: char spiRead(void);
+[v _spiRead `(uc ~T0 @X0 0 ef ]
 "45
 [; ;./spi.h: 45: void spiWrite(char);
 [v _spiWrite `(v ~T0 @X0 0 ef1`uc ]
@@ -334,97 +334,96 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"33 main.c
-[; ;main.c: 33: uint8_t adcValue;
+"36 main.c
+[; ;main.c: 36: uint8_t adcValue;
 [v _adcValue `uc ~T0 @X0 1 e ]
+"37
+[; ;main.c: 37: uint8_t valor;
+[v _valor `uc ~T0 @X0 1 e ]
+"38
+[; ;main.c: 38: char* cadena;
+[v _cadena `*uc ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"35
-[; ;main.c: 35: void main(void) {
+"40
+[; ;main.c: 40: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"36
-[; ;main.c: 36:     ANSEL = 1;
-[e = _ANSEL -> -> 1 `i `uc ]
-"37
-[; ;main.c: 37:     ANSELH= 0;
-[e = _ANSELH -> -> 0 `i `uc ]
-"38
-[; ;main.c: 38:     INTCONbits.GIE =1;
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"39
-[; ;main.c: 39:     INTCONbits.PEIE =1;
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40:     PIE1bits.SSPIE = 1;
-[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
 "41
-[; ;main.c: 41:     TRISB = 0;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 41:     ANSEL = 1;
+[e = _ANSEL -> -> 1 `i `uc ]
+"42
+[; ;main.c: 42:     ANSELH= 0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "43
-[; ;main.c: 43:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
-[e ( _spiInit (4 , , , . `E1292 4 . `E1300 0 . `E1304 1 . `E1308 0 ]
+[; ;main.c: 43:     INTCONbits.GIE =1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"44
+[; ;main.c: 44:     INTCONbits.PEIE =1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
 "45
-[; ;main.c: 45:     initADC();
+[; ;main.c: 45:     PIE1bits.SSPIE = 1;
+[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
+"46
+[; ;main.c: 46:     TRISB = 0;
+[e = _TRISB -> -> 0 `i `uc ]
+"48
+[; ;main.c: 48:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+[e ( _spiInit (4 , , , . `E1292 4 . `E1300 0 . `E1304 1 . `E1308 0 ]
+"50
+[; ;main.c: 50:     initADC();
 [e ( _initADC ..  ]
-"47
-[; ;main.c: 47:     while(1){
+"52
+[; ;main.c: 52:     while(1){
 [e :U 140 ]
 {
-"48
-[; ;main.c: 48:         adcValue = readADC(0);
+"53
+[; ;main.c: 53:         adcValue = readADC(0);
 [e = _adcValue ( _readADC (1 -> -> 0 `i `uc ]
-"49
-[; ;main.c: 49:         PORTB = adcValue;
+"54
+[; ;main.c: 54:         PORTB = adcValue;
 [e = _PORTB _adcValue ]
-"50
-[; ;main.c: 50:     }
+"55
+[; ;main.c: 55:     }
 }
 [e :U 139 ]
 [e $U 140  ]
 [e :U 141 ]
-"52
-[; ;main.c: 52:     return;
+"57
+[; ;main.c: 57:     return;
 [e $UE 138  ]
-"53
-[; ;main.c: 53: }
+"58
+[; ;main.c: 58: }
 [e :UE 138 ]
 }
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"55
-[; ;main.c: 55: void __attribute__((picinterrupt(("")))) isr(){
+"60
+[; ;main.c: 60: void __attribute__((picinterrupt(("")))) isr(){
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"56
-[; ;main.c: 56:     if(PIR1bits.SSPIF ==1){
+"61
+[; ;main.c: 61:     if(PIR1bits.SSPIF ==1){
 [e $ ! == -> . . _PIR1bits 0 3 `i -> 1 `i 143  ]
 {
-"57
-[; ;main.c: 57:         int valor = spiRead();
-[v _valor `i ~T0 @X0 1 a ]
-[e = _valor -> ( _spiRead ..  `i ]
-"58
-[; ;main.c: 58:         if(valor == 1){
-[e $ ! == _valor -> 1 `i 144  ]
-{
-"59
-[; ;main.c: 59:             spiWrite(adcValue);
-[e ( _spiWrite (1 -> _adcValue `uc ]
-"60
-[; ;main.c: 60:         }
-}
-[e :U 144 ]
-"61
-[; ;main.c: 61:         PIR1bits.SSPIF = 0;
-[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
 "62
-[; ;main.c: 62:     }
+[; ;main.c: 62:         PIR1bits.SSPIF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"63
+[; ;main.c: 63:         valor = spiRead();
+[e = _valor -> ( _spiRead ..  `uc ]
+"64
+[; ;main.c: 64:         if(valor == 'A') spiWrite(adcValue);
+[e $ ! == -> _valor `ui -> 65 `ui 144  ]
+[e ( _spiWrite (1 -> _adcValue `uc ]
+[e :U 144 ]
+"65
+[; ;main.c: 65:        }
 }
 [e :U 143 ]
-"63
-[; ;main.c: 63: }
+"66
+[; ;main.c: 66: }
 [e :UE 142 ]
 }

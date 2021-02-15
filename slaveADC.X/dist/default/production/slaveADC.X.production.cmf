@@ -13,20 +13,20 @@
 %PSECTS
 $dist/default/production\slaveADC.X.production.o
 cinit CODE 0 F F 7 2
-text1 CODE 0 6B 6B 1E 2
-text2 CODE 0 89 89 13 2
-text3 CODE 0 9C 9C E 2
-text4 CODE 0 42 42 29 2
-text5 CODE 0 BA BA 6 2
-text6 CODE 0 AA AA 9 2
-text7 CODE 0 B3 B3 7 2
-maintext CODE 0 16 16 2C 2
+text1 CODE 0 62 62 1E 2
+text2 CODE 0 80 80 13 2
+text3 CODE 0 93 93 E 2
+text4 CODE 0 40 40 22 2
+text5 CODE 0 B1 B1 6 2
+text6 CODE 0 A1 A1 9 2
+text7 CODE 0 AA AA 7 2
+maintext CODE 0 16 16 2A 2
 cstackCOMMON COMMON 1 70 70 7 1
-cstackBANK0 BANK0 1 20 20 5 1
+cstackBANK0 BANK0 1 20 20 2 1
 intentry CODE 0 4 4 8 2
-bssBANK0 BANK0 1 25 25 1 1
+bssCOMMON COMMON 1 77 77 3 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
+$C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -36,32 +36,32 @@ config CONFIG 4 2007 2007 2 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 26-6F 1
+RAM 22-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 26-6F 1
+BANK0 22-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST C0-1FFF 2
+CONST B7-1FFF 2
 ENTRY 3-3 2
-ENTRY C0-1FFF 2
+ENTRY B7-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
 CODE 3-3 2
-CODE C0-1FFF 2
+CODE B7-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
-COMMON 77-7D 1
+COMMON 7A-7D 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE C0-1FFF 2
+STRCODE B7-1FFF 2
 STRING 3-3 2
-STRING C0-1FFF 2
+STRING B7-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -76,66 +76,65 @@ STRING C0-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\slaveADC.X.production.o
-F cinit CODE >777:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-F cinit CODE >780:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-F cinit CODE >791:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-10 cinit CODE >792:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-11 cinit CODE >793:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-12 cinit CODE >799:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-12 cinit CODE >801:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-13 cinit CODE >802:C:\Users\ANGELO~1\AppData\Local\Temp\scgk.s
-4 intentry CODE >55:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-B3 text7 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-B3 text7 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-B9 text7 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-AA text6 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-AA text6 CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-AF text6 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-B2 text6 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-BA text5 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-BB text5 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-BF text5 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-42 text4 CODE >55:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-42 text4 CODE >56:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-48 text4 CODE >57:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-53 text4 CODE >58:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-59 text4 CODE >59:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-61 text4 CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-64 text4 CODE >63:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-9C text3 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-9C text3 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-A2 text3 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-A5 text3 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-A6 text3 CODE >28:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-A9 text3 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-89 text2 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-8C text2 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-95 text2 CODE >35:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-96 text2 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-9A text2 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-9B text2 CODE >38:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
-6B text1 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-6E text1 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-71 text1 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-77 text1 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-7B text1 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-7C text1 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-7D text1 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-82 text1 CODE >23:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-83 text1 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-83 text1 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-88 text1 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
-16 maintext CODE >35:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-16 maintext CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-1A maintext CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-1B maintext CODE >38:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-1C maintext CODE >39:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-1D maintext CODE >40:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-20 maintext CODE >41:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-21 maintext CODE >43:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-2C maintext CODE >45:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-31 maintext CODE >48:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
-3C maintext CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+F cinit CODE >778:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+F cinit CODE >781:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+F cinit CODE >798:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+10 cinit CODE >799:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+11 cinit CODE >800:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+12 cinit CODE >806:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+12 cinit CODE >808:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+13 cinit CODE >809:C:\Users\ANGELO~1\AppData\Local\Temp\shpk.s
+4 intentry CODE >60:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+AA text7 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+AA text7 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+B0 text7 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+A1 text6 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+A1 text6 CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+A6 text6 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+A9 text6 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+B1 text5 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+B2 text5 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+B6 text5 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+40 text4 CODE >60:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+40 text4 CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+46 text4 CODE >62:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+47 text4 CODE >63:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+4F text4 CODE >64:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+5B text4 CODE >66:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+93 text3 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+93 text3 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+99 text3 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+9C text3 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+9D text3 CODE >28:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+A0 text3 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+80 text2 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+81 text2 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+8C text2 CODE >35:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+8D text2 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+91 text2 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+92 text2 CODE >38:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
+62 text1 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+65 text1 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+68 text1 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+6E text1 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+72 text1 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+73 text1 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+74 text1 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+79 text1 CODE >23:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+7A text1 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+7A text1 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+7F text1 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
+16 maintext CODE >40:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+16 maintext CODE >41:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+1A maintext CODE >42:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+1B maintext CODE >43:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+1C maintext CODE >44:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+1D maintext CODE >45:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+20 maintext CODE >46:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+21 maintext CODE >48:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+2A maintext CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+2F maintext CODE >53:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+3A maintext CODE >54:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -149,27 +148,29 @@ A9 text3 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\slaveADC.X.production.o
-__Hspace_0 C0 0 ABS 0 - -
-__Hspace_1 77 0 ABS 0 - -
+__Hspace_0 B7 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-spiInit@sTransmitEdge 22 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
-__end_of_readADC 138 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
+spiInit@sTransmitEdge 76 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
+__end_of_readADC 126 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
+___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
 _main 2C 0 CODE 0 maintext dist/default/production\slaveADC.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\slaveADC.X.production.o
-start 18 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
+start 18 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
 __size_of_main 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -179,18 +180,18 @@ __size_of_initADC 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __size_of_spiInit 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __size_of_spiRead 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-spiInit@sDataSample 20 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
+spiInit@sDataSample 74 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\slaveADC.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
 _SSPBUF 13 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\slaveADC.X.production.o
-_readADC 112 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
-__end_of_initADC 154 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
+_readADC 100 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
+__end_of_initADC 142 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -199,8 +200,8 @@ __Hcinit 2C 0 CODE 0 cinit -
 __size_of_spiReceiveWait 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Hstack 0 0 STACK 2 stack -
 __Hmaintext 0 0 ABS 0 maintext -
-__end_of_spiInit 112 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
-__end_of_spiRead 166 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
+__end_of_spiInit 100 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
+__end_of_spiRead 154 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
 __Lbank0 0 0 ABS 0 bank0 -
@@ -228,22 +229,21 @@ __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 C0 0 ABS 0 - -
-__S1 77 0 ABS 0 - -
+__S0 B7 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr 84 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
-readADC@pin 21 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
+_isr 80 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
+readADC@pin 75 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\slaveADC.X.production.o
-__end_of_isr D6 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
+__end_of_isr C4 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\scgk.o
-__LbssBANK0 0 0 ABS 0 bssBANK0 -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\shpk.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __pmaintext 2C 0 CODE 0 maintext dist/default/production\slaveADC.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_adcValue 25 0 BANK0 1 bssBANK0 dist/default/production\slaveADC.X.production.o
+_adcValue 79 0 COMMON 1 bssCOMMON dist/default/production\slaveADC.X.production.o
 _ADCON0bits 1F 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _ADCON1bits 9F 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Lspace_0 0 0 ABS 0 - -
@@ -251,6 +251,7 @@ __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\slaveADC.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _PIR1bits C 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Lend_init 18 0 CODE 0 end_init -
@@ -258,49 +259,47 @@ __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization 24 0 CODE 0 cinit dist/default/production\slaveADC.X.production.o
 __Hintentry 18 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-isr@valor 75 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 __Hreset_vec 6 0 CODE 0 reset_vec -
-__HbssBANK0 0 0 ABS 0 bssBANK0 -
-_initADC 138 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
-__ptext1 D6 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
-__ptext2 112 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
-__ptext3 138 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
-__ptext4 84 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
-__ptext5 174 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
-__ptext6 154 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
-__ptext7 166 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
-_spiInit D6 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
-_spiRead 154 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
+_initADC 126 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
+__ptext1 C4 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
+__ptext2 100 0 CODE 0 text2 dist/default/production\slaveADC.X.production.o
+__ptext3 126 0 CODE 0 text3 dist/default/production\slaveADC.X.production.o
+__ptext4 80 0 CODE 0 text4 dist/default/production\slaveADC.X.production.o
+__ptext5 162 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
+__ptext6 142 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
+__ptext7 154 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
+_spiInit C4 0 CODE 0 text1 dist/default/production\slaveADC.X.production.o
+_spiRead 142 0 CODE 0 text6 dist/default/production\slaveADC.X.production.o
 spiWrite@dat 70 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
-spiInit@sType 23 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
+spiInit@sType 20 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __size_of_readADC 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __end_of__initialization 24 0 CODE 0 cinit dist/default/production\slaveADC.X.production.o
 __size_of_spiWrite 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-_spiReceiveWait 166 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
+_spiReceiveWait 154 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 _SSPSTAT 94 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Hend_init 1E 0 CODE 0 end_init -
-__end_of_main 84 0 CODE 0 maintext dist/default/production\slaveADC.X.production.o
+__end_of_main 80 0 CODE 0 maintext dist/default/production\slaveADC.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\slaveADC.X.production.o
+_valor 78 0 COMMON 1 bssCOMMON dist/default/production\slaveADC.X.production.o
 _SSPSTATbits 94 0 ABS 0 - dist/default/production\slaveADC.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\slaveADC.X.production.o
 __size_of_isr 0 0 ABS 0 - dist/default/production\slaveADC.X.production.o
-spiInit@sClockIdle 21 0 BANK0 1 cstackBANK0 dist/default/production\slaveADC.X.production.o
+spiInit@sClockIdle 75 0 COMMON 1 cstackCOMMON dist/default/production\slaveADC.X.production.o
 __initialization 1E 0 CODE 0 cinit dist/default/production\slaveADC.X.production.o
-__pbssBANK0 25 0 BANK0 1 bssBANK0 dist/default/production\slaveADC.X.production.o
-_spiWrite 174 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
-__end_of_spiReceiveWait 174 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
-__end_of_spiWrite 180 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
+_spiWrite 162 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
+__end_of_spiReceiveWait 162 0 CODE 0 text7 dist/default/production\slaveADC.X.production.o
+__end_of_spiWrite 16E 0 CODE 0 text5 dist/default/production\slaveADC.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -326,9 +325,9 @@ __end_of_spiWrite 180 0 CODE 0 text5 dist/default/production\slaveADC.X.producti
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 7 1
-cstackBANK0 1 20 20 6 1
-intentry 0 4 8 BC 2
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 2 1
+intentry 0 4 8 B3 2
 reset_vec 0 0 0 3 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section

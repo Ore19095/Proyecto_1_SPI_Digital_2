@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"43 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"48 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [e E1292 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -57,9 +57,9 @@ SPI_ACTIVE_2_IDLE 64
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"35 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"40 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"55
+"60
 [v _isr isr `II(v  1 e 1 0 ]
 "12 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
@@ -105,13 +105,13 @@ SPI_ACTIVE_2_IDLE 64
 [v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
 "1238
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
-[s S301 . 1 `uc 1 ADON 1 0 :1:0 
+[s S302 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 `uc 1 ADCS 1 0 :2:6 
 ]
 "1276
-[s S306 . 1 `uc 1 . 1 0 :1:0 
+[s S307 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -120,14 +120,14 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 ADCS0 1 0 :1:6 
 `uc 1 ADCS1 1 0 :1:7 
 ]
-[s S315 . 1 `uc 1 . 1 0 :1:0 
+[s S316 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S318 . 1 `uc 1 . 1 0 :1:0 
+[s S319 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[u S321 . 1 `S301 1 . 1 0 `S306 1 . 1 0 `S315 1 . 1 0 `S318 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES321  1 e 1 @31 ]
+[u S322 . 1 `S302 1 . 1 0 `S307 1 . 1 0 `S316 1 . 1 0 `S319 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES322  1 e 1 @31 ]
 "1478
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 [s S56 . 1 `uc 1 TMR1IE 1 0 :1:0 
@@ -143,7 +143,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _PIE1bits PIE1bits `VES64  1 e 1 @140 ]
 "2177
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
-[s S192 . 1 `uc 1 BF 1 0 :1:0 
+[s S193 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -153,48 +153,48 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 SMP 1 0 :1:7 
 ]
 "2231
-[s S201 . 1 `uc 1 . 1 0 :2:0 
+[s S202 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S206 . 1 `uc 1 . 1 0 :2:0 
+[s S207 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DATA 1 0 :1:5 
 ]
-[s S212 . 1 `uc 1 . 1 0 :2:0 
+[s S213 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S217 . 1 `uc 1 . 1 0 :2:0 
+[s S218 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S222 . 1 `uc 1 . 1 0 :2:0 
+[s S223 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S227 . 1 `uc 1 . 1 0 :2:0 
+[s S228 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[u S232 . 1 `S192 1 . 1 0 `S201 1 . 1 0 `S206 1 . 1 0 `S212 1 . 1 0 `S217 1 . 1 0 `S222 1 . 1 0 `S227 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES232  1 e 1 @148 ]
-[s S347 . 1 `uc 1 . 1 0 :4:0 
+[u S233 . 1 `S193 1 . 1 0 `S202 1 . 1 0 `S207 1 . 1 0 `S213 1 . 1 0 `S218 1 . 1 0 `S223 1 . 1 0 `S228 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES233  1 e 1 @148 ]
+[s S348 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "2991
-[u S353 . 1 `S347 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES353  1 e 1 @159 ]
+[u S354 . 1 `S348 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES354  1 e 1 @159 ]
 "3387
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
@@ -203,23 +203,25 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "4463
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
-"33 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"36 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _adcValue adcValue `uc  1 e 1 0 ]
-"35
+"37
+[v _valor valor `uc  1 e 1 0 ]
+"40
 [v _main main `(v  1 e 1 0 ]
 {
-"53
+"58
 } 0
 "12 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
 {
 [v spiInit@sType sType `E1264  1 a 1 wreg ]
 [v spiInit@sType sType `E1264  1 a 1 wreg ]
-[v spiInit@sDataSample sDataSample `E1272  1 p 1 0 ]
-[v spiInit@sClockIdle sClockIdle `E1276  1 p 1 1 ]
-[v spiInit@sTransmitEdge sTransmitEdge `E1280  1 p 1 2 ]
+[v spiInit@sDataSample sDataSample `E1272  1 p 1 4 ]
+[v spiInit@sClockIdle sClockIdle `E1276  1 p 1 5 ]
+[v spiInit@sTransmitEdge sTransmitEdge `E1280  1 p 1 6 ]
 "14
-[v spiInit@sType sType `E1264  1 a 1 3 ]
+[v spiInit@sType sType `E1264  1 a 1 0 ]
 "27
 } 0
 "33 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\ADC.c
@@ -227,7 +229,7 @@ SPI_ACTIVE_2_IDLE 64
 {
 [v readADC@pin pin `uc  1 a 1 wreg ]
 [v readADC@pin pin `uc  1 a 1 wreg ]
-[v readADC@pin pin `uc  1 a 1 1 ]
+[v readADC@pin pin `uc  1 a 1 5 ]
 "38
 } 0
 "11
@@ -235,12 +237,10 @@ SPI_ACTIVE_2_IDLE 64
 {
 "31
 } 0
-"55 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"60 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"57
-[v isr@valor valor `i  1 a 2 5 ]
-"63
+"66
 } 0
 "34 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiWrite spiWrite `(v  1 e 1 0 ]

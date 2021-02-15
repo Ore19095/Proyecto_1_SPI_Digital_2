@@ -29,8 +29,13 @@
 #include "spi.h"
 #include "ADC.h"
 
+#define GIVE_ADC_CHAR0 1
+#define GIVE_ADC_CHAR1 2
+#define GIVE_ADC_CHAR2 3
 
 uint8_t adcValue;
+uint8_t valor;
+char* cadena;
 
 void main(void) {
     ANSEL = 1; //ANS0 como entrada analogica
@@ -54,12 +59,10 @@ void main(void) {
 
 void __interrupt() isr(){
     if(PIR1bits.SSPIF ==1){ // si se recibio un dato
-        int valor = spiRead();
-        if(valor == 1){
-            spiWrite(adcValue);
-        }
         PIR1bits.SSPIF = 0;
-    }
+        valor = spiRead();
+        if(valor == 'A') spiWrite(adcValue);
+       }
 }
 
 
