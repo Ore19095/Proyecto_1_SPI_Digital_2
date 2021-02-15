@@ -2743,21 +2743,62 @@ char UARTReadChar();
 
 uint8_t UARTReadString(char *buf, uint8_t max_length);
 # 31 "main.c" 2
-
-
+# 41 "main.c"
+char* uint8ToChar(uint8_t);
 
 
 int main(){
+
+  ANSEL = 0;
+  ANSELH = 0;
+
   TRISD = 0;
   TRISE = 0;
+
+  TRISA = 0;
+
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
                 SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
   LcdInit();
-  uint8_t contador = 0;
-  while(1){
+  UARTInit(9600,1);
 
-    }
+
+  uint8_t adc;
+  uint8_t counter;
+  uint8_t temp;
+
+  char* adcChar;
+  LcdSetCursor(1,1);
+  LcdWriteString("ADC: CONT: TEMP:");
+  while(1){
+      LcdSetCursor(2,1);
+      PORTA = ~ 1;
+
+      spiWrite(1);
+      adc = spiRead();
+      adcChar = uint8ToChar(adc);
+      LcdWriteString(adcChar);
+  }
 
 
   return 0;
+}
+
+char* uint8ToChar(uint8_t value){
+    char salida[4];
+    uint8_t temp;
+
+    temp = value/100;
+
+    salida[0] = temp + 48;
+
+
+    value -= temp*100;
+
+    salida[1] = value/10 +48 ;
+    salida[2] = value % 10 + 48;
+
+    salida[3] = '\0';
+
+    return salida;
 }

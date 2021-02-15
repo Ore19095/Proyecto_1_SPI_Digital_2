@@ -1,2 +1,4 @@
-build/default/production/MAIN.p1:  \
-MAIN.c 
+build/default/production/main.p1:  \
+main.c  \
+spi.h  \
+ADC.h 

@@ -29,22 +29,71 @@
 #include "spi.h"
 #include "LCD8bits.h"
 #include "UART.h"
-//#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 4000000
+
+
+// valor de los "comandos que se enviaran a cada pic slave
+
+#define GIVE_ADC 1
+#define GIVE_COUNTER 2
+#define GIVE_TEMP 3
+//-----------prototipos de funciones--------------------------- 
+char* uint8ToChar(uint8_t);
 
 
 int main(){
+  //como no se utilizara el ADC en el master se desactivan
+  ANSEL = 0;
+  ANSELH = 0;
+  // PUERTOS PARA LA LCD
   TRISD = 0;
   TRISE = 0;
+  //PUERTOS PARA SPI
+  TRISA = 0; // PARA LA ACTIVACION DE nSS DE CADA PIC 
+  // INICIALIZACION DE LOS MODULOS A USAR
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
                 SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
   LcdInit();
-  uint8_t contador = 0;
+  UARTInit(9600,1);
+  
+  // varibles para el adc 
+  uint8_t adc;
+  uint8_t counter;
+  uint8_t temp;
+  
+  char* adcChar;
+  LcdSetCursor(1,1);
+  LcdWriteString("ADC: CONT: TEMP:");
   while(1){
-    
-    }
+      LcdSetCursor(2,1); //inicio de segunda linea
+      PORTA = ~ 1; //RA0 en 1 
+      
+      spiWrite(GIVE_ADC);
+      adc = spiRead(); // se lee el valor enviado
+      adcChar = uint8ToChar(adc);
+      LcdWriteString(adcChar);
+  }
 
   
   return 0;
 }
 
+char* uint8ToChar(uint8_t value){
+    char salida[4]; //cadena que sera retornada
+    uint8_t temp;
+    
+    temp = value/100;
+    
+    salida[0] = temp + 48;// se obtiene el valor del 3er digito, y se 
+            //pasa a su equivalente en ASCII
+    
+    value -= temp*100;
+    
+    salida[1] = value/10 +48 ;
+    salida[2] = value % 10 + 48;
+    
+    salida[3] = '\0';
+    
+    return salida;
+}
 
