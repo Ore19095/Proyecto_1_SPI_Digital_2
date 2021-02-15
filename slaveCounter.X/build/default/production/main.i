@@ -2646,37 +2646,78 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 # 24 "main.c" 2
-# 34 "main.c"
+
+# 1 "./spi.h" 1
+# 15 "./spi.h"
+typedef enum
+{
+    SPI_MASTER_OSC_DIV4 = 0b00100000,
+    SPI_MASTER_OSC_DIV16 = 0b00100001,
+    SPI_MASTER_OSC_DIV64 = 0b00100010,
+    SPI_MASTER_TMR2 = 0b00100011,
+    SPI_SLAVE_SS_EN = 0b00100100,
+    SPI_SLAVE_SS_DIS = 0b00100101
+}Spi_Type;
+
+typedef enum
+{
+    SPI_DATA_SAMPLE_MIDDLE = 0b00000000,
+    SPI_DATA_SAMPLE_END = 0b10000000
+}Spi_Data_Sample;
+
+typedef enum
+{
+    SPI_CLOCK_IDLE_HIGH = 0b00010000,
+    SPI_CLOCK_IDLE_LOW = 0b00000000
+}Spi_Clock_Idle;
+
+typedef enum
+{
+    SPI_IDLE_2_ACTIVE = 0b00000000,
+    SPI_ACTIVE_2_IDLE = 0b01000000
+}Spi_Transmit_Edge;
+
+
+void spiInit(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
+void spiWrite(char);
+unsigned spiDataReady(void);
+char spiRead(void);
+# 25 "main.c" 2
+
+
+
+
+
+
 volatile uint16_t micros = 0;
 volatile uint16_t timeB1 = 0, timeB2=0;
 volatile uint8_t portbAnterior = 255;
 volatile uint8_t portbActual = 255;
 
+
+uint8_t valor;
+
+
 void main(void) {
     ANSEL = 1;
     ANSELH = 0;
-    TRISA = 1;
-    TRISB = 255;
-    TRISC = 0;
     TRISD = 0;
-    IOCB = 255;
     PORTD = 0;
-    OPTION_REGbits.nRBPU = 0;
+    IOCB = 255;
 
+    OPTION_REGbits.nRBPU = 0;
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;
     INTCONbits.RBIE = 1;
     PIE1bits.TMR2IE = 1;
-
+    PIE1bits.SSPIE = 1;
     PIR2 = 50;
-
 
     T2CON = 0b00000100;
 
-
-    uint8_t* adc0;
+    spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+            SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
     while(1){
-
     }
 
     return;
@@ -2706,10 +2747,17 @@ void __attribute__((picinterrupt(("")))) isr(void){
 
         INTCONbits.RBIF = 0;
     }
-
      if (PIR1bits.TMR2IF){
         PIR1bits.TMR2IF = 0;
         micros+= 50;
     }
+
+
+    if(PIR1bits.SSPIF){
+        PIR1bits.SSPIF = 0;
+        valor = spiRead();
+        if(valor == 'C') spiWrite(PORTD);
+    }
+
     return;
 }

@@ -2747,7 +2747,11 @@ uint8_t UARTReadString(char *buf, uint8_t max_length);
 uint8_t valueADC;
 char* cadenaADC;
 
+uint8_t valueCounter;
+char* cadenaCounter;
+
 char* adcToString(uint16_t);
+char* int2String(uint8_t);
 
 
 int main(){
@@ -2769,6 +2773,7 @@ int main(){
   LcdWriteString("ADC: CONT: TEMP:");
   while(1){
       LcdSetCursor(2,1);
+
       PORTA = 254;
 
       spiWrite('A');
@@ -2776,9 +2781,13 @@ int main(){
 
       cadenaADC = adcToString(valueADC);
       LcdWriteString(cadenaADC);
-      LcdWriteChar('V');
+      LcdWriteString("V ");
 
-
+      PORTA = 253;
+      spiWrite('C');
+      valueCounter = spiRead();
+      cadenaCounter = int2String(valueCounter);
+      LcdWriteString(cadenaCounter) ;
   }
 
 
@@ -2802,4 +2811,18 @@ char* adcToString(uint16_t value){
     salida[3] = digito +48;
     salida[4] = '\0';
     return salida;
+}
+
+char* int2String(uint8_t value){
+    char cadena[4];
+    uint8_t digito;
+
+    digito = value/100;
+    cadena[0] = digito +48;
+    value-= digito*100;
+
+    cadena[1] = value/10 + 48;
+    cadena[2] = value%10 + 48;
+    cadena[3] = '\0';
+    return cadena;
 }

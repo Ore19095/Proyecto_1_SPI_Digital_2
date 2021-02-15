@@ -35,15 +35,19 @@
 // valor de los "comandos que se enviaran a cada pic slave
 
 #define GIVE_ADC    'A'
-#define GIVE_COUNTER 2
+#define GIVE_COUNTER 'C'
 #define GIVE_TEMP 3
 
 
 // lectura del adc
 uint8_t valueADC;
 char* cadenaADC;
+// lectura del contador
+uint8_t valueCounter;
+char* cadenaCounter;
 //-----------prototipos de funciones--------------------------- 
 char* adcToString(uint16_t);
+char* int2String(uint8_t);
 
 
 int main(){
@@ -65,6 +69,7 @@ int main(){
   LcdWriteString("ADC: CONT: TEMP:");
   while(1){
       LcdSetCursor(2,1); //inicio de segunda linea
+      //--------- comunicacion con el slave que tiene el adc
       PORTA = 254; //RA0 en 1 
       //se recibe el valor del ADC y se convierte a voltaje;
       spiWrite(GIVE_ADC);
@@ -72,9 +77,13 @@ int main(){
       
       cadenaADC = adcToString(valueADC);
       LcdWriteString(cadenaADC);
-      LcdWriteChar('V');
-      
-      
+      LcdWriteString("V ");
+      //comunicacion con el slave de contador
+      PORTA = 253;
+      spiWrite(GIVE_COUNTER);
+      valueCounter = spiRead();
+      cadenaCounter = int2String(valueCounter);
+      LcdWriteString(cadenaCounter) ;
   }
 
   
@@ -100,3 +109,16 @@ char* adcToString(uint16_t value){
     return salida;
 }
 
+char* int2String(uint8_t value){
+    char cadena[4]; //cadena en donde se almacenan los ASCCI de los digitos
+    uint8_t digito;
+    // se obtiene el valor de las decenas y s e convierte a ASCII
+    digito = value/100;
+    cadena[0] = digito +48;
+    value-= digito*100;
+    // se hace lo mismo con las decenas y centenas
+    cadena[1] = value/10 + 48;
+    cadena[2] = value%10 + 48;
+    cadena[3] = '\0';
+    return cadena;
+}

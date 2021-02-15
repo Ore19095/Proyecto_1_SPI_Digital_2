@@ -15,8 +15,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1416
 [; ;D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1416: extern volatile unsigned char TRISA __attribute__((address(0x085)));
 [v _TRISA `Vuc ~T0 @X0 0 e@133 ]
-"59 main.c
-[; ;main.c: 59:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
+"63 main.c
+[; ;main.c: 63:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
 [c E1292 32 33 34 35 36 37 .. ]
 [n E1292 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
 [c E1300 0 128 .. ]
@@ -49,12 +49,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47
 [; ;./spi.h: 47: char spiRead(void);
 [v _spiRead `(uc ~T0 @X0 0 ef ]
-"46 main.c
-[; ;main.c: 46: char* adcToString(uint16_t);
+"49 main.c
+[; ;main.c: 49: char* adcToString(uint16_t);
 [v _adcToString `(*uc ~T0 @X0 0 ef1`ui ]
-"59 ./LCD8bits.h
-[; ;./LCD8bits.h: 59:  void LcdWriteChar(char a);
-[v _LcdWriteChar `(v ~T0 @X0 0 ef1`uc ]
+"50
+[; ;main.c: 50: char* int2String(uint8_t);
+[v _int2String `(*uc ~T0 @X0 0 ef1`uc ]
 "9 main.c
 [p x FOSC  =  INTRC_NOCLKOUT ]
 "10
@@ -319,131 +319,192 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;main.c: 44: char* cadenaADC;
 [v _cadenaADC `*uc ~T0 @X0 1 e ]
+"46
+[; ;main.c: 46: uint8_t valueCounter;
+[v _valueCounter `uc ~T0 @X0 1 e ]
+"47
+[; ;main.c: 47: char* cadenaCounter;
+[v _cadenaCounter `*uc ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"49
-[; ;main.c: 49: int main(){
+"53
+[; ;main.c: 53: int main(){
 [v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"51
-[; ;main.c: 51:   ANSEL = 0;
-[e = _ANSEL -> -> 0 `i `uc ]
-"52
-[; ;main.c: 52:   ANSELH = 0;
-[e = _ANSELH -> -> 0 `i `uc ]
-"54
-[; ;main.c: 54:   TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
 "55
-[; ;main.c: 55:   TRISE = 0;
-[e = _TRISE -> -> 0 `i `uc ]
-"57
-[; ;main.c: 57:   TRISA = 0;
-[e = _TRISA -> -> 0 `i `uc ]
+[; ;main.c: 55:   ANSEL = 0;
+[e = _ANSEL -> -> 0 `i `uc ]
+"56
+[; ;main.c: 56:   ANSELH = 0;
+[e = _ANSELH -> -> 0 `i `uc ]
+"58
+[; ;main.c: 58:   TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "59
-[; ;main.c: 59:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
-[e ( _spiInit (4 , , , . `E1292 0 . `E1300 0 . `E1304 1 . `E1308 0 ]
+[; ;main.c: 59:   TRISE = 0;
+[e = _TRISE -> -> 0 `i `uc ]
 "61
-[; ;main.c: 61:   LcdInit();
-[e ( _LcdInit ..  ]
-"62
-[; ;main.c: 62:   UARTInit(9600,1);
-[e ( _UARTInit (2 , -> -> -> 9600 `i `l `ul -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:   LcdSetCursor(1,1);
-[e ( _LcdSetCursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 61:   TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+"63
+[; ;main.c: 63:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
+[e ( _spiInit (4 , , , . `E1292 0 . `E1300 0 . `E1304 1 . `E1308 0 ]
 "65
-[; ;main.c: 65:   LcdWriteString("ADC: CONT: TEMP:");
-[e ( _LcdWriteString (1 :s 1C ]
+[; ;main.c: 65:   LcdInit();
+[e ( _LcdInit ..  ]
 "66
-[; ;main.c: 66:   while(1){
+[; ;main.c: 66:   UARTInit(9600,1);
+[e ( _UARTInit (2 , -> -> -> 9600 `i `l `ul -> -> 1 `i `uc ]
+"68
+[; ;main.c: 68:   LcdSetCursor(1,1);
+[e ( _LcdSetCursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"69
+[; ;main.c: 69:   LcdWriteString("ADC: CONT: TEMP:");
+[e ( _LcdWriteString (1 :s 1C ]
+"70
+[; ;main.c: 70:   while(1){
 [e :U 140 ]
 {
-"67
-[; ;main.c: 67:       LcdSetCursor(2,1);
-[e ( _LcdSetCursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"68
-[; ;main.c: 68:       PORTA = 254;
-[e = _PORTA -> -> 254 `i `uc ]
-"70
-[; ;main.c: 70:       spiWrite('A');
-[e ( _spiWrite (1 -> -> 65 `ui `uc ]
 "71
-[; ;main.c: 71:       valueADC = spiRead();
-[e = _valueADC -> ( _spiRead ..  `uc ]
+[; ;main.c: 71:       LcdSetCursor(2,1);
+[e ( _LcdSetCursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "73
-[; ;main.c: 73:       cadenaADC = adcToString(valueADC);
-[e = _cadenaADC ( _adcToString (1 -> _valueADC `ui ]
-"74
-[; ;main.c: 74:       LcdWriteString(cadenaADC);
-[e ( _LcdWriteString (1 -> _cadenaADC `*Cuc ]
+[; ;main.c: 73:       PORTA = 254;
+[e = _PORTA -> -> 254 `i `uc ]
 "75
-[; ;main.c: 75:       LcdWriteChar('V');
-[e ( _LcdWriteChar (1 -> -> 86 `ui `uc ]
+[; ;main.c: 75:       spiWrite('A');
+[e ( _spiWrite (1 -> -> 65 `ui `uc ]
+"76
+[; ;main.c: 76:       valueADC = spiRead();
+[e = _valueADC -> ( _spiRead ..  `uc ]
 "78
-[; ;main.c: 78:   }
+[; ;main.c: 78:       cadenaADC = adcToString(valueADC);
+[e = _cadenaADC ( _adcToString (1 -> _valueADC `ui ]
+"79
+[; ;main.c: 79:       LcdWriteString(cadenaADC);
+[e ( _LcdWriteString (1 -> _cadenaADC `*Cuc ]
+"80
+[; ;main.c: 80:       LcdWriteString("V ");
+[e ( _LcdWriteString (1 :s 2C ]
+"82
+[; ;main.c: 82:       PORTA = 253;
+[e = _PORTA -> -> 253 `i `uc ]
+"83
+[; ;main.c: 83:       spiWrite('C');
+[e ( _spiWrite (1 -> -> 67 `ui `uc ]
+"84
+[; ;main.c: 84:       valueCounter = spiRead();
+[e = _valueCounter -> ( _spiRead ..  `uc ]
+"85
+[; ;main.c: 85:       cadenaCounter = int2String(valueCounter);
+[e = _cadenaCounter ( _int2String (1 _valueCounter ]
+"86
+[; ;main.c: 86:       LcdWriteString(cadenaCounter) ;
+[e ( _LcdWriteString (1 -> _cadenaCounter `*Cuc ]
+"87
+[; ;main.c: 87:   }
 }
 [e :U 139 ]
 [e $U 140  ]
 [e :U 141 ]
-"81
-[; ;main.c: 81:   return 0;
+"90
+[; ;main.c: 90:   return 0;
 [e ) -> 0 `i ]
 [e $UE 138  ]
-"82
-[; ;main.c: 82: }
+"91
+[; ;main.c: 91: }
 [e :UE 138 ]
 }
-"84
-[; ;main.c: 84: char* adcToString(uint16_t value){
+"93
+[; ;main.c: 93: char* adcToString(uint16_t value){
 [v _adcToString `(*uc ~T0 @X0 1 ef1`ui ]
 {
 [e :U _adcToString ]
 [v _value `ui ~T0 @X0 1 r1 ]
 [f ]
-"85
-[; ;main.c: 85:     char salida[5];
+"94
+[; ;main.c: 94:     char salida[5];
 [v _salida `uc ~T0 @X0 -> 5 `i a ]
-"86
-[; ;main.c: 86:     uint16_t digito;
-[v _digito `ui ~T0 @X0 1 a ]
-"88
-[; ;main.c: 88:     value = value*1.96;
-[e = _value -> * -> _value `d .1.96 `ui ]
-"89
-[; ;main.c: 89:     digito = value/100 ;
-[e = _digito / _value -> -> 100 `i `ui ]
-"91
-[; ;main.c: 91:     salida[0] = digito + 48;
-[e = *U + &U _salida * -> -> -> 0 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
-"92
-[; ;main.c: 92:     salida[1] = '.';
-[e = *U + &U _salida * -> -> -> 1 `i `ui `ux -> -> # *U &U _salida `ui `ux -> -> 46 `ui `uc ]
-"93
-[; ;main.c: 93:     value -= digito*100;
-[e =- _value * _digito -> -> 100 `i `ui ]
 "95
-[; ;main.c: 95:     digito = value/10;
-[e = _digito / _value -> -> 10 `i `ui ]
-"96
-[; ;main.c: 96:     salida[2] = digito +48;
-[e = *U + &U _salida * -> -> -> 2 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
+[; ;main.c: 95:     uint16_t digito;
+[v _digito `ui ~T0 @X0 1 a ]
 "97
-[; ;main.c: 97:     digito = value % 10;
-[e = _digito % _value -> -> 10 `i `ui ]
+[; ;main.c: 97:     value = value*1.96;
+[e = _value -> * -> _value `d .1.96 `ui ]
 "98
-[; ;main.c: 98:     salida[3] = digito +48;
-[e = *U + &U _salida * -> -> -> 3 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
-"99
-[; ;main.c: 99:     salida[4] = '\0';
-[e = *U + &U _salida * -> -> -> 4 `i `ui `ux -> -> # *U &U _salida `ui `ux -> -> 0 `ui `uc ]
+[; ;main.c: 98:     digito = value/100 ;
+[e = _digito / _value -> -> 100 `i `ui ]
 "100
-[; ;main.c: 100:     return salida;
+[; ;main.c: 100:     salida[0] = digito + 48;
+[e = *U + &U _salida * -> -> -> 0 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
+"101
+[; ;main.c: 101:     salida[1] = '.';
+[e = *U + &U _salida * -> -> -> 1 `i `ui `ux -> -> # *U &U _salida `ui `ux -> -> 46 `ui `uc ]
+"102
+[; ;main.c: 102:     value -= digito*100;
+[e =- _value * _digito -> -> 100 `i `ui ]
+"104
+[; ;main.c: 104:     digito = value/10;
+[e = _digito / _value -> -> 10 `i `ui ]
+"105
+[; ;main.c: 105:     salida[2] = digito +48;
+[e = *U + &U _salida * -> -> -> 2 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
+"106
+[; ;main.c: 106:     digito = value % 10;
+[e = _digito % _value -> -> 10 `i `ui ]
+"107
+[; ;main.c: 107:     salida[3] = digito +48;
+[e = *U + &U _salida * -> -> -> 3 `i `ui `ux -> -> # *U &U _salida `ui `ux -> + _digito -> -> 48 `i `ui `uc ]
+"108
+[; ;main.c: 108:     salida[4] = '\0';
+[e = *U + &U _salida * -> -> -> 4 `i `ui `ux -> -> # *U &U _salida `ui `ux -> -> 0 `ui `uc ]
+"109
+[; ;main.c: 109:     return salida;
 [e ) &U _salida ]
 [e $UE 142  ]
-"101
-[; ;main.c: 101: }
+"110
+[; ;main.c: 110: }
 [e :UE 142 ]
 }
+"112
+[; ;main.c: 112: char* int2String(uint8_t value){
+[v _int2String `(*uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _int2String ]
+[v _value `uc ~T0 @X0 1 r1 ]
+[f ]
+"113
+[; ;main.c: 113:     char cadena[4];
+[v _cadena `uc ~T0 @X0 -> 4 `i a ]
+"114
+[; ;main.c: 114:     uint8_t digito;
+[v _digito `uc ~T0 @X0 1 a ]
+"116
+[; ;main.c: 116:     digito = value/100;
+[e = _digito -> / -> _value `i -> 100 `i `uc ]
+"117
+[; ;main.c: 117:     cadena[0] = digito +48;
+[e = *U + &U _cadena * -> -> -> 0 `i `ui `ux -> -> # *U &U _cadena `ui `ux -> + -> _digito `i -> 48 `i `uc ]
+"118
+[; ;main.c: 118:     value-= digito*100;
+[e =- _value -> * -> _digito `i -> 100 `i `uc ]
+"120
+[; ;main.c: 120:     cadena[1] = value/10 + 48;
+[e = *U + &U _cadena * -> -> -> 1 `i `ui `ux -> -> # *U &U _cadena `ui `ux -> + / -> _value `i -> 10 `i -> 48 `i `uc ]
+"121
+[; ;main.c: 121:     cadena[2] = value%10 + 48;
+[e = *U + &U _cadena * -> -> -> 2 `i `ui `ux -> -> # *U &U _cadena `ui `ux -> + % -> _value `i -> 10 `i -> 48 `i `uc ]
+"122
+[; ;main.c: 122:     cadena[3] = '\0';
+[e = *U + &U _cadena * -> -> -> 3 `i `ui `ux -> -> # *U &U _cadena `ui `ux -> -> 0 `ui `uc ]
+"123
+[; ;main.c: 123:     return cadena;
+[e ) &U _cadena ]
+[e $UE 143  ]
+"124
+[; ;main.c: 124: }
+[e :UE 143 ]
+}
 [a 1C 65 68 67 58 32 67 79 78 84 58 32 84 69 77 80 58 0 ]
+[a 2C 86 32 0 ]

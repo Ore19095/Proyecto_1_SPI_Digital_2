@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"48 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"44 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [e E1292 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -57,9 +57,9 @@ SPI_ACTIVE_2_IDLE 64
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"40 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"36 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"60
+"56
 [v _isr isr `II(v  1 e 1 0 ]
 "12 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
@@ -203,14 +203,14 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "4463
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
-"36 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"32 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _adcValue adcValue `uc  1 e 1 0 ]
-"37
+"33
 [v _valor valor `uc  1 e 1 0 ]
-"40
+"36
 [v _main main `(v  1 e 1 0 ]
 {
-"58
+"54
 } 0
 "12 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
@@ -237,10 +237,10 @@ SPI_ACTIVE_2_IDLE 64
 {
 "31
 } 0
-"60 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
+"56 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"66
+"62
 } 0
 "34 D:\programacion\PIC\Proyecto_1_SPI_Digital_2\slaveADC.X\spi.c
 [v _spiWrite spiWrite `(v  1 e 1 0 ]

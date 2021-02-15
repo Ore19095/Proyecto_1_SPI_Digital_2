@@ -25,8 +25,8 @@
 #include "spi.h"
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
+#define VALUE_TMR2 50
 
-#define _XTAL_FREQ 4000000
 
 volatile uint16_t micros = 0; //contador de milisegundos
 volatile uint16_t timeB1 = 0, timeB2=0; //variables para el control del tiempo
@@ -34,12 +34,13 @@ volatile uint8_t portbAnterior = 255; //para el control del puerto anterior
 volatile uint8_t portbActual = 255;
 // variables globales 
 
-uint8_t value;
+uint8_t valor;
 
 
 void main(void) {
     ANSEL = 1;
     ANSELH = 0;
+    TRISD = 0;
     PORTD = 0; //salida para los leds
     IOCB = 255; // INTERRUPT ON CHANGE ACTIVADA EN TODO EL PUERTO B
     
@@ -47,11 +48,15 @@ void main(void) {
     INTCONbits.GIE = 1; // se activan las interrupciones
     INTCONbits.PEIE = 1; //perifericas activadas
     INTCONbits.RBIE = 1;// interrupt on change activada
-        spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+    PIE1bits.TMR2IE = 1; // int tmr2 activada
+    PIE1bits.SSPIE = 1;  // int MSSP activada
+    PIR2 = VALUE_TMR2; // nuemero de veces que tiene que contar para que 
+    //ocurra la interrupcion cada 1 ms
+    T2CON = 0b00000100; // prescaler de 1:1 post de 1:1 y encendido
+    
+    spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
             SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
     while(1){
-        //todo se hace en la interrupcion
-        
     }
     
     return;
@@ -90,7 +95,7 @@ void __interrupt() isr(void){
     if(PIR1bits.SSPIF){
         PIR1bits.SSPIF = 0;
         valor = spiRead();
-        if(valor == 'A') spiWrite(adcValue);
+        if(valor == 'C') spiWrite(PORTD);
     }
     
     return;

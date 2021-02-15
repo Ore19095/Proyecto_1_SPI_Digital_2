@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Feb 15 15:39:33 2021
+                                                                                               Mon Feb 15 16:38:23 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F887
@@ -506,7 +506,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    492 ;;
    493 ;; *************** function _main *****************
    494 ;; Defined at:
-   495 ;;		line 40 in file "main.c"
+   495 ;;		line 36 in file "main.c"
    496 ;; Parameters:    Size  Location     Type
    497 ;;		None
    498 ;; Auto vars:     Size  Location     Type
@@ -543,36 +543,36 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    529                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    530                           
    531                           
-   532                           ;main.c: 41:     ANSEL = 1;
+   532                           ;main.c: 37:     ANSEL = 1;
    533  0016  3001               	movlw	1
    534  0017  1683               	bsf	3,5	;RP0=1, select bank3
    535  0018  1703               	bsf	3,6	;RP1=1, select bank3
    536  0019  0088               	movwf	8	;volatile
    537  001A                     l802:
    538                           
-   539                           ;main.c: 42:     ANSELH= 0;
+   539                           ;main.c: 38:     ANSELH= 0;
    540  001A  0189               	clrf	9	;volatile
    541  001B                     l804:
    542                           
-   543                           ;main.c: 43:     INTCONbits.GIE =1;
+   543                           ;main.c: 39:     INTCONbits.GIE =1;
    544  001B  178B               	bsf	11,7	;volatile
    545  001C                     l806:
    546                           
-   547                           ;main.c: 44:     INTCONbits.PEIE =1;
+   547                           ;main.c: 40:     INTCONbits.PEIE =1;
    548  001C  170B               	bsf	11,6	;volatile
    549  001D                     l808:
    550                           
-   551                           ;main.c: 45:     PIE1bits.SSPIE = 1;
+   551                           ;main.c: 41:     PIE1bits.SSPIE = 1;
    552  001D  1683               	bsf	3,5	;RP0=1, select bank1
    553  001E  1303               	bcf	3,6	;RP1=0, select bank1
    554  001F  158C               	bsf	12,3	;volatile
    555  0020                     l810:
    556                           
-   557                           ;main.c: 46:     TRISB = 0;
+   557                           ;main.c: 42:     TRISB = 0;
    558  0020  0186               	clrf	6	;volatile
    559  0021                     l812:
    560                           
-   561                           ;main.c: 48:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+   561                           ;main.c: 44:     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
    562  0021  01F4               	clrf	spiInit@sDataSample
    563  0022  01F5               	clrf	spiInit@sClockIdle
    564  0023  01F6               	clrf	spiInit@sTransmitEdge
@@ -580,11 +580,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    566  0025  120A  118A  2062  120A  118A  	fcall	_spiInit
    567  002A                     l814:
    568                           
-   569                           ;main.c: 50:     initADC();
+   569                           ;main.c: 46:     initADC();
    570  002A  120A  118A  2093  120A  118A  	fcall	_initADC
    571  002F                     l816:
    572                           
-   573                           ;main.c: 53:         adcValue = readADC(0);
+   573                           ;main.c: 49:         adcValue = readADC(0);
    574  002F  3000               	movlw	0
    575  0030  120A  118A  2080  120A  118A  	fcall	_readADC
    576  0035  1283               	bcf	3,5	;RP0=0, select bank0
@@ -594,7 +594,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    580  0039  00F9               	movwf	_adcValue
    581  003A                     l818:
    582                           
-   583                           ;main.c: 54:         PORTB = adcValue;
+   583                           ;main.c: 50:         PORTB = adcValue;
    584  003A  0879               	movf	_adcValue,w
    585  003B  0086               	movwf	6	;volatile
    586  003C  282F               	goto	l816
@@ -849,7 +849,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    834  0040                     __ptext4:	
    835 ;; *************** function _isr *****************
    836 ;; Defined at:
-   837 ;;		line 60 in file "main.c"
+   837 ;;		line 56 in file "main.c"
    838 ;; Parameters:    Size  Location     Type
    839 ;;		None
    840 ;; Auto vars:     Size  Location     Type
@@ -883,7 +883,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    868  0040                     _isr:
    869  0040                     i1l744:
    870                           
-   871                           ;main.c: 61:     if(PIR1bits.SSPIF ==1){
+   871                           ;main.c: 57:     if(PIR1bits.SSPIF ==1){
    872  0040  1283               	bcf	3,5	;RP0=0, select bank0
    873  0041  1303               	bcf	3,6	;RP1=0, select bank0
    874  0042  1D8C               	btfss	12,3	;volatile
@@ -894,18 +894,18 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    879  0046                     u4_20:
    880  0046                     i1l746:
    881                           
-   882                           ;main.c: 62:         PIR1bits.SSPIF = 0;
+   882                           ;main.c: 58:         PIR1bits.SSPIF = 0;
    883  0046  118C               	bcf	12,3	;volatile
    884  0047                     i1l748:
    885                           
-   886                           ;main.c: 63:         valor = spiRead();
+   886                           ;main.c: 59:         valor = spiRead();
    887  0047  120A  118A  20A1  120A  118A  	fcall	_spiRead
    888  004C  00F1               	movwf	??_isr
    889  004D  0871               	movf	??_isr,w
    890  004E  00F8               	movwf	_valor
    891  004F                     i1l750:
    892                           
-   893                           ;main.c: 64:         if(valor == 'A') spiWrite(adcValue);
+   893                           ;main.c: 60:         if(valor == 'A') spiWrite(adcValue);
    894  004F  3041               	movlw	65
    895  0050  0678               	xorwf	_valor,w
    896  0051  1D03               	btfss	3,2
@@ -1278,7 +1278,7 @@ DATA                 0      0       C      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Feb 15 15:39:33 2021
+Symbol Table                                                                                   Mon Feb 15 16:38:23 2021
 
             _SSPSTATbits 0094                       l61 007A                       l62 007F  
                      l91 008D                       l94 0092                       l88 00A0  
