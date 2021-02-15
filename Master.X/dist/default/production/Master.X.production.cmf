@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+$C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 $dist/default/production\Master.X.production.o
@@ -92,15 +92,15 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Master.X.production.o
-7F8 cinit CODE >1024:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7F8 cinit CODE >1027:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7F8 cinit CODE >1041:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7F9 cinit CODE >1042:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7FA cinit CODE >1043:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7FB cinit CODE >1044:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7FC cinit CODE >1050:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7FC cinit CODE >1052:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
-7FD cinit CODE >1053:C:\Users\ANGELO~1\AppData\Local\Temp\sls4.s
+7F8 cinit CODE >1024:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7F8 cinit CODE >1027:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7F8 cinit CODE >1041:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7F9 cinit CODE >1042:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7FA cinit CODE >1043:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7FB cinit CODE >1044:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7FC cinit CODE >1050:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7FC cinit CODE >1052:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
+7FD cinit CODE >1053:C:\Users\ANGELO~1\AppData\Local\Temp\skek.s
 2B5 text20 CODE >3:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
 2B6 text20 CODE >6:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
 2C0 text20 CODE >7:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
@@ -441,10 +441,10 @@ __size_of_adcToString 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __end_of_LcdCmd 40 0 CODE 0 text19 dist/default/production\Master.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 _main 380 0 CODE 0 maintext dist/default/production\Master.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Master.X.production.o
-start 0 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+start 0 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
@@ -461,12 +461,12 @@ __size_of___lwmod 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 LcdWriteString@value 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __size_of_LcdWriteChar 0 0 ABS 0 - dist/default/production\Master.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __size_of_LcdSetCursor 0 0 ABS 0 - dist/default/production\Master.X.production.o
@@ -493,8 +493,8 @@ __end_of___lwmod 2000 0 CODE 0 text8 dist/default/production\Master.X.production
 _valueADC 53 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
 __size_of_LcdWriteString 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
-___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
+___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@b 20 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
@@ -515,7 +515,7 @@ _TRISC3 43B 0 ABS 0 - dist/default/production\Master.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of_LcdInit 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of_LcdPort 0 0 ABS 0 - dist/default/production\Master.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 __size_of_LcdCmd 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -581,7 +581,7 @@ ___xxtofl 7BA 0 CODE 0 text6 dist/default/production\Master.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\Master.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\sls4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\skek.o
 __end_of___xxtofl 92E 0 CODE 0 text6 dist/default/production\Master.X.production.o
 __end_of_LcdInit 1D6 0 CODE 0 text18 dist/default/production\Master.X.production.o
 __end_of_LcdPort 67E 0 CODE 0 text20 dist/default/production\Master.X.production.o
