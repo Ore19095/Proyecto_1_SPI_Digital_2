@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "spi.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,34 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-
-
-
-
-
-
-
-
-#pragma config FOSC = INTRC_NOCLKOUT
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config MCLRE = OFF
-#pragma config CP = OFF
-#pragma config CPD = OFF
-#pragma config BOREN = OFF
-#pragma config IESO = OFF
-#pragma config FCMEN = OFF
-#pragma config LVP = OFF
-
-
-#pragma config BOR4V = BOR40V
-#pragma config WRT = OFF
-
-
-
-
-
+# 1 "spi.c" 2
+# 10 "spi.c"
+# 1 "./spi.h" 1
+# 13 "./spi.h"
 # 1 "D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2514,145 +2490,9 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/programas/mplab5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 27 "main.c" 2
+# 13 "./spi.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 13 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int8_t;
 
-
-
-
-
-
-typedef signed int int16_t;
-
-
-
-
-
-
-
-typedef __int24 int24_t;
-
-
-
-
-
-
-
-typedef signed long int int32_t;
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint8_t;
-
-
-
-
-
-typedef unsigned int uint16_t;
-
-
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-
-
-typedef unsigned long int uint32_t;
-# 88 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_least8_t;
-
-
-
-
-
-
-
-typedef signed int int_least16_t;
-# 109 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_least24_t;
-# 118 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef signed long int int_least32_t;
-# 136 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_least8_t;
-
-
-
-
-
-
-typedef unsigned int uint_least16_t;
-# 154 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_least24_t;
-
-
-
-
-
-
-
-typedef unsigned long int uint_least32_t;
-# 181 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_fast8_t;
-
-
-
-
-
-
-typedef signed int int_fast16_t;
-# 200 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_fast24_t;
-
-
-
-
-
-
-
-typedef signed long int int_fast32_t;
-# 224 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_fast8_t;
-
-
-
-
-
-typedef unsigned int uint_fast16_t;
-# 240 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_fast24_t;
-
-
-
-
-
-
-typedef unsigned long int uint_fast32_t;
-# 268 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef int32_t intmax_t;
-# 282 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
-typedef uint32_t uintmax_t;
-
-
-
-
-
-
-typedef int16_t intptr_t;
-
-
-
-
-typedef uint16_t uintptr_t;
-# 28 "main.c" 2
-
-# 1 "./spi.h" 1
-# 15 "./spi.h"
 typedef enum
 {
     SPI_MASTER_OSC_DIV4 = 0b00100000,
@@ -2684,157 +2524,48 @@ typedef enum
 
 void spiInit(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
 void spiWrite(char);
-unsigned spiDataReady(void);
-char spiRead(void);
-# 29 "main.c" 2
-
-# 1 "./LCD8bits.h" 1
-# 35 "./LCD8bits.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 35 "./LCD8bits.h" 2
-# 55 "./LCD8bits.h"
- void LcdPort(char a);
- void LcdClear(void);
- void LcdSetCursor(char a, char b);
- void LcdInit(void);
- void LcdWriteChar(char a);
- void LcdWriteString( const char *a);
- void LcdShiftRight(void);
- void LcdShiftLeft(void);
-# 30 "main.c" 2
-
-# 1 "./UART.h" 1
-# 16 "./UART.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 16 "./UART.h" 2
-# 31 "./UART.h"
-void UARTInit(const uint32_t baud_rate, const uint8_t BRGH);
+unsigned spiDataReady();
+char spiRead();
+# 10 "spi.c" 2
 
 
+void spiInit(Spi_Type sType, Spi_Data_Sample sDataSample, Spi_Clock_Idle sClockIdle, Spi_Transmit_Edge sTransmitEdge)
+{
+    TRISC5 = 0;
+    if(sType & 0b00000100)
+    {
+        SSPSTAT = sTransmitEdge;
+        TRISC3 = 1;
+    }
+    else
+    {
+        SSPSTAT = sDataSample | sTransmitEdge;
+        TRISC3 = 0;
+    }
 
-
-
-void UARTSendChar(const char c);
-
-
-
-
-
-
-void UARTSendString(const char* str, const uint8_t max_length);
-
-
-
-
-
-uint8_t UARTDataReady();
-
-
-
-
-
-char UARTReadChar();
-
-
-
-
-
-
-
-uint8_t UARTReadString(char *buf, uint8_t max_length);
-# 31 "main.c" 2
-# 43 "main.c"
-uint8_t valueADC;
-char* cadenaADC;
-
-uint8_t valueCounter;
-char* cadenaCounter;
-
-char* cadenaTemp;
-uint8_t valorTemp;
-
-char* adcToString(uint16_t);
-char* int2String(uint8_t);
-
-
-int main(){
-
-  ANSEL = 0;
-  ANSELH = 0;
-
-  TRISD = 0;
-  TRISE = 0;
-
-  TRISA = 248;
-
-    spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
-                SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
-  LcdInit();
-  UARTInit(9600,1);
-
-  LcdSetCursor(1,1);
-  LcdWriteString("ADC: CONT: TEMP:");
-  while(1){
-      LcdSetCursor(2,1);
-
-      PORTA = 6;
-
-      spiWrite('A');
-      valueADC = spiRead();
-
-      cadenaADC = adcToString(valueADC);
-      LcdWriteString(cadenaADC);
-      LcdWriteString("V ");
-
-      PORTA = 5;
-      spiWrite('C');
-      valueCounter = spiRead();
-      cadenaCounter = int2String(valueCounter);
-      LcdWriteString(cadenaCounter) ;
-      LcdWriteChar(' ');
-
-      PORTA = 3;
-      spiWrite('T');
-      valorTemp = spiRead();
-      cadenaTemp = int2String(valorTemp);
-      LcdWriteString(cadenaTemp);
-      LcdWriteChar(0xDF);
-      LcdWriteChar('C');
-  }
-
-
-  return 0;
+    SSPCON = sType | sClockIdle;
 }
 
-char* adcToString(uint16_t value){
-    char salida[5];
-    uint16_t digito;
-
-    value = value*1.96;
-    digito = value/100 ;
-
-    salida[0] = digito + 48;
-    salida[1] = '.';
-    value -= digito*100;
-
-    digito = value/10;
-    salida[2] = digito +48;
-    digito = value % 10;
-    salida[3] = digito +48;
-    salida[4] = '\0';
-    return salida;
+static void spiReceiveWait()
+{
+    while ( !SSPSTATbits.BF );
 }
 
-char* int2String(uint8_t value){
-    char cadena[4];
-    uint8_t digito;
+void spiWrite(char dat)
+{
+    SSPBUF = dat;
+}
 
-    digito = value/100;
-    cadena[0] = digito +48;
-    value-= digito*100;
+unsigned spiDataReady()
+{
+    if(SSPSTATbits.BF)
+        return 1;
+    else
+        return 0;
+}
 
-    cadena[1] = value/10 + 48;
-    cadena[2] = value%10 + 48;
-    cadena[3] = '\0';
-    return cadena;
+char spiRead()
+{
+    spiReceiveWait();
+    return(SSPBUF);
 }

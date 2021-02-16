@@ -2648,13 +2648,58 @@ void initADC(void);
 int readADC(uint8_t);
 # 26 "main.c" 2
 
+# 1 "./spi.h" 1
+# 15 "./spi.h"
+typedef enum
+{
+    SPI_MASTER_OSC_DIV4 = 0b00100000,
+    SPI_MASTER_OSC_DIV16 = 0b00100001,
+    SPI_MASTER_OSC_DIV64 = 0b00100010,
+    SPI_MASTER_TMR2 = 0b00100011,
+    SPI_SLAVE_SS_EN = 0b00100100,
+    SPI_SLAVE_SS_DIS = 0b00100101
+}Spi_Type;
+
+typedef enum
+{
+    SPI_DATA_SAMPLE_MIDDLE = 0b00000000,
+    SPI_DATA_SAMPLE_END = 0b10000000
+}Spi_Data_Sample;
+
+typedef enum
+{
+    SPI_CLOCK_IDLE_HIGH = 0b00010000,
+    SPI_CLOCK_IDLE_LOW = 0b00000000
+}Spi_Clock_Idle;
+
+typedef enum
+{
+    SPI_IDLE_2_ACTIVE = 0b00000000,
+    SPI_ACTIVE_2_IDLE = 0b01000000
+}Spi_Transmit_Edge;
+
+
+void spiInit(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
+void spiWrite(char);
+unsigned spiDataReady();
+char spiRead();
+# 27 "main.c" 2
+
 
 int adcValue;
 uint8_t temperature;
+uint8_t valor;
 void main(void) {
     ANSEL = 1;
     TRISD = 248;
     TRISB = 0;
+
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    PIE1bits.SSPIE = 1;
+
+     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+            SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
     initADC();
 
     while(1){
@@ -2670,4 +2715,13 @@ void main(void) {
         else PORTD = 4;
     }
     return;
+}
+
+void __attribute__((picinterrupt(("")))) isr(){
+       if(PIR1bits.SSPIF){
+        PIR1bits.SSPIF = 0;
+        valor = spiRead();
+        if(valor == 'T') spiWrite(temperature);
+    }
+       return;
 }

@@ -24,13 +24,22 @@
 
 #include <xc.h>
 #include "ADC.h"
+#include "spi.h"
 
 int adcValue;
 uint8_t temperature;
+uint8_t valor;
 void main(void) {
     ANSEL = 1; //ANS0 como entrada analogica
     TRISD = 248;// pines de salida para los leds
     TRISB = 0;
+    
+    INTCONbits.GIE = 1; 
+    INTCONbits.PEIE = 1;
+    PIE1bits.SSPIE = 1;// interrupcion mssp activada
+    
+     spiInit(SPI_SLAVE_SS_EN,SPI_DATA_SAMPLE_MIDDLE,
+            SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
     initADC();
     
     while(1){
@@ -46,4 +55,13 @@ void main(void) {
         else PORTD = 4;
     }
     return;
+}
+
+void __interrupt() isr(){
+       if(PIR1bits.SSPIF){
+        PIR1bits.SSPIF = 0;
+        valor = spiRead();
+        if(valor == 'T') spiWrite(temperature);
+    }
+       return;
 }

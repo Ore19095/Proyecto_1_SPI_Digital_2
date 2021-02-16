@@ -36,7 +36,7 @@
 
 #define GIVE_ADC    'A'
 #define GIVE_COUNTER 'C'
-#define GIVE_TEMP 3
+#define GIVE_TEMP 'T'
 
 
 // lectura del adc
@@ -45,6 +45,9 @@ char* cadenaADC;
 // lectura del contador
 uint8_t valueCounter;
 char* cadenaCounter;
+// lectura de temperatura
+char* cadenaTemp;
+uint8_t valorTemp;
 //-----------prototipos de funciones--------------------------- 
 char* adcToString(uint16_t);
 char* int2String(uint8_t);
@@ -58,7 +61,7 @@ int main(){
   TRISD = 0;
   TRISE = 0;
   //PUERTOS PARA SPI
-  TRISA = 0; // PARA LA ACTIVACION DE nSS DE CADA PIC 
+  TRISA = 248; // PARA LA ACTIVACION DE nSS DE CADA PIC 
   // INICIALIZACION DE LOS MODULOS A USAR
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE,
                 SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
@@ -70,7 +73,7 @@ int main(){
   while(1){
       LcdSetCursor(2,1); //inicio de segunda linea
       //--------- comunicacion con el slave que tiene el adc
-      PORTA = 254; //RA0 en 1 
+      PORTA = 6; //RA0 en 1 
       //se recibe el valor del ADC y se convierte a voltaje;
       spiWrite(GIVE_ADC);
       valueADC = spiRead();
@@ -78,12 +81,21 @@ int main(){
       cadenaADC = adcToString(valueADC);
       LcdWriteString(cadenaADC);
       LcdWriteString("V ");
-      //comunicacion con el slave de contador
-      PORTA = 253;
+      //-----comunicacion con el slave de contador
+      PORTA = 5;
       spiWrite(GIVE_COUNTER);
       valueCounter = spiRead();
       cadenaCounter = int2String(valueCounter);
       LcdWriteString(cadenaCounter) ;
+      LcdWriteChar(' ');
+      // ------ comunicacion con el slave de temperatura
+      PORTA = 3;
+      spiWrite(GIVE_TEMP);
+      valorTemp = spiRead();
+      cadenaTemp = int2String(valorTemp);
+      LcdWriteString(cadenaTemp);
+      LcdWriteChar(0xDF); // simbolo de grado
+      LcdWriteChar('C');
   }
 
   
