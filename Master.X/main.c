@@ -77,10 +77,13 @@ int main(){
       //se recibe el valor del ADC y se convierte a voltaje;
       spiWrite(GIVE_ADC);
       valueADC = spiRead();
-      
       cadenaADC = adcToString(valueADC);
       LcdWriteString(cadenaADC);
       LcdWriteString("V ");
+      UARTSendString(cadenaADC,5);
+      UARTSendChar('V');
+      UARTSendChar(' ');
+      UARTSendChar(0xA);//salto de linea
       //-----comunicacion con el slave de contador
       PORTA = 5;
       spiWrite(GIVE_COUNTER);
@@ -88,6 +91,9 @@ int main(){
       cadenaCounter = int2String(valueCounter);
       LcdWriteString(cadenaCounter) ;
       LcdWriteChar(' ');
+      UARTSendString(cadenaCounter,4);
+      UARTSendChar(' ');
+      UARTSendChar(0xA);//salto de linea
       // ------ comunicacion con el slave de temperatura
       PORTA = 3;
       spiWrite(GIVE_TEMP);
@@ -96,6 +102,10 @@ int main(){
       LcdWriteString(cadenaTemp);
       LcdWriteChar(0xDF); // simbolo de grado
       LcdWriteChar('C');
+      UARTSendString(cadenaTemp,4);
+      UARTSendChar('C');
+      UARTSendChar(' ');
+      UARTSendChar(0xA);//salto de linea
   }
 
   

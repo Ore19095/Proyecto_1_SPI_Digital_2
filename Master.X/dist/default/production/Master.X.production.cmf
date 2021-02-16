@@ -11,36 +11,38 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
+$C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 $dist/default/production\Master.X.production.o
 cinit CODE 0 7F4 7F4 C 2
-text1 CODE 0 D7B D7B 6 2
-text2 CODE 0 D88 D88 9 2
-text3 CODE 0 D81 D81 7 2
-text4 CODE 0 4 4 16 2
-text5 CODE 0 FA2 FA2 5E 2
-text6 CODE 0 DA6 DA6 15 2
-text7 CODE 0 F49 F49 59 2
-text8 CODE 0 80 80 67 2
-text9 CODE 0 25C 25C 9E 2
-text10 CODE 0 2FA 2FA BA 2
-text11 CODE 0 DF8 DF8 25 2
-text12 CODE 0 E44 E44 3A 2
-text13 CODE 0 EC0 EC0 44 2
-text14 CODE 0 156 156 7C 2
+text1 CODE 0 CEA CEA 6 2
+text2 CODE 0 CF7 CF7 9 2
+text3 CODE 0 CF0 CF0 7 2
+text4 CODE 0 D36 D36 16 2
+text5 CODE 0 F3C F3C 5E 2
+text6 CODE 0 D21 D21 15 2
+text7 CODE 0 EE3 EE3 59 2
+text8 CODE 0 2C 2C 67 2
+text9 CODE 0 208 208 9E 2
+text10 CODE 0 2A6 2A6 BA 2
+text11 CODE 0 D89 D89 25 2
+text12 CODE 0 DDE DDE 3A 2
+text13 CODE 0 E5A E5A 44 2
+text14 CODE 0 102 102 7C 2
 text15 CODE 0 493 493 361 2
-text16 CODE 0 E1D E1D 27 2
-text17 CODE 0 E7 E7 6F 2
-text18 CODE 0 1A 1A 66 2
-text19 CODE 0 E7E E7E 42 2
-text20 CODE 0 D91 D91 15 2
-text21 CODE 0 DD5 DD5 23 2
-text22 CODE 0 F04 F04 45 2
-text23 CODE 0 DBB DBB 1A 2
-text24 CODE 0 1D2 1D2 8A 2
-maintext CODE 0 3B4 3B4 DF 2
+text16 CODE 0 5 5 27 2
+text17 CODE 0 DAE DAE 30 2
+text18 CODE 0 D00 D00 C 2
+text19 CODE 0 93 93 6F 2
+text20 CODE 0 F9A F9A 66 2
+text21 CODE 0 E18 E18 42 2
+text22 CODE 0 D0C D0C 15 2
+text23 CODE 0 D66 D66 23 2
+text24 CODE 0 E9E E9E 45 2
+text25 CODE 0 D4C D4C 1A 2
+text26 CODE 0 17E 17E 8A 2
+maintext CODE 0 360 360 133 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 32 1
 bssBANK0 BANK0 1 52 52 6 1
@@ -60,27 +62,27 @@ BANK0 58-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-3 2
-CONST 824-D7A 2
+CONST 3-4 2
+CONST 824-CE9 2
 CONST 1000-1FFF 2
-ENTRY 3-3 2
-ENTRY 824-D7A 2
+ENTRY 3-4 2
+ENTRY 824-CE9 2
 ENTRY 1000-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 3-3 2
-CODE 824-D7A 2
+CODE 3-4 2
+CODE 824-CE9 2
 CODE 1000-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 3-3 2
-STRCODE 824-D7A 2
+STRCODE 3-4 2
+STRCODE 824-CE9 2
 STRCODE 1000-1FFF 2
-STRING 3-3 2
-STRING 824-D7A 2
+STRING 3-4 2
+STRING 824-CE9 2
 STRING 1000-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -96,112 +98,122 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Master.X.production.o
-7F4 cinit CODE >1038:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F4 cinit CODE >1041:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F4 cinit CODE >1067:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F5 cinit CODE >1068:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F6 cinit CODE >1069:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F7 cinit CODE >1070:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F8 cinit CODE >1071:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7F9 cinit CODE >1072:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7FA cinit CODE >1073:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7FB cinit CODE >1074:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7FC cinit CODE >1080:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7FC cinit CODE >1082:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-7FD cinit CODE >1083:C:\Users\ANGELO~1\AppData\Local\Temp\s44c.s
-1D2 text24 CODE >3:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-1D3 text24 CODE >6:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-1DD text24 CODE >7:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-1EF text24 CODE >8:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-201 text24 CODE >9:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-213 text24 CODE >10:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-225 text24 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-237 text24 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-249 text24 CODE >13:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-25B text24 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DBB text23 CODE >16:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DBC text23 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DBF text23 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DC5 text23 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DC8 text23 CODE >20:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DD1 text23 CODE >21:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DD4 text23 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F04 text22 CODE >41:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F04 text22 CODE >42:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F0A text22 CODE >43:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F13 text22 CODE >44:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F19 text22 CODE >45:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F21 text22 CODE >46:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F27 text22 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F30 text22 CODE >48:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F36 text22 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F3C text22 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F42 text22 CODE >52:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-F48 text22 CODE >54:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DD5 text21 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DD6 text21 CODE >30:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DD7 text21 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DDE text21 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DDF text21 CODE >35:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DE6 text21 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DE7 text21 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DF7 text21 CODE >39:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-D91 text20 CODE >56:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-D92 text20 CODE >57:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-D95 text20 CODE >58:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-D9B text20 CODE >59:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-D9E text20 CODE >60:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DA2 text20 CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-DA5 text20 CODE >62:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-E7E text19 CODE >64:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-E7E text19 CODE >66:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-E81 text19 CODE >67:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-EBF text19 CODE >68:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
-1A text18 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-1A text18 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-22 text18 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-2A text18 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-2C text18 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-2D text18 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-36 text18 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-3A text18 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-3E text18 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-47 text18 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-59 text18 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-67 text18 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-68 text18 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-71 text18 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-77 text18 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-7F text18 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-E7 text17 CODE >8:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-E7 text17 CODE >10:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-EE text17 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-119 text17 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-11A text17 CODE >13:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-11B text17 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-146 text17 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-147 text17 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-148 text17 CODE >20:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-149 text17 CODE >21:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-14A text17 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-14D text17 CODE >25:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-14E text17 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-14F text17 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-150 text17 CODE >28:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-151 text17 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-154 text17 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-155 text17 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
-E1D text16 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E1E text16 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E20 text16 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E27 text16 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E2B text16 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E31 text16 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E31 text16 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E38 text16 CODE >55:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E3A text16 CODE >56:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E3F text16 CODE >59:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
-E43 text16 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+7F4 cinit CODE >1041:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F4 cinit CODE >1044:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F4 cinit CODE >1070:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F5 cinit CODE >1071:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F6 cinit CODE >1072:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F7 cinit CODE >1073:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F8 cinit CODE >1074:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7F9 cinit CODE >1075:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7FA cinit CODE >1076:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7FB cinit CODE >1077:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7FC cinit CODE >1083:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7FC cinit CODE >1085:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+7FD cinit CODE >1086:C:\Users\ANGELO~1\AppData\Local\Temp\sggo.s
+17E text26 CODE >3:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+17F text26 CODE >6:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+189 text26 CODE >7:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+19B text26 CODE >8:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+1AD text26 CODE >9:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+1BF text26 CODE >10:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+1D1 text26 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+1E3 text26 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+1F5 text26 CODE >13:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+207 text26 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D4C text25 CODE >16:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D4D text25 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D50 text25 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D56 text25 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D59 text25 CODE >20:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D62 text25 CODE >21:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D65 text25 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E9E text24 CODE >41:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E9E text24 CODE >42:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EA4 text24 CODE >43:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EAD text24 CODE >44:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EB3 text24 CODE >45:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EBB text24 CODE >46:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EC1 text24 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+ECA text24 CODE >48:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+ED0 text24 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+ED6 text24 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EDC text24 CODE >52:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+EE2 text24 CODE >54:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D66 text23 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D67 text23 CODE >30:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D68 text23 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D6F text23 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D70 text23 CODE >35:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D77 text23 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D78 text23 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D88 text23 CODE >39:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D0C text22 CODE >56:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D0D text22 CODE >57:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D10 text22 CODE >58:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D16 text22 CODE >59:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D19 text22 CODE >60:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D1D text22 CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+D20 text22 CODE >62:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E18 text21 CODE >64:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E18 text21 CODE >66:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E1B text21 CODE >67:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+E59 text21 CODE >68:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\LCD8btis.c
+F9A text20 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+F9A text20 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FA2 text20 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FAA text20 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FAC text20 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FAD text20 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FB6 text20 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FBA text20 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FBE text20 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FC7 text20 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FD9 text20 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FE7 text20 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FE8 text20 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FF1 text20 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FF7 text20 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+FFF text20 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+93 text19 CODE >8:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+93 text19 CODE >10:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+9A text19 CODE >11:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+C5 text19 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+C6 text19 CODE >13:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+C7 text19 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F2 text19 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F3 text19 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F4 text19 CODE >20:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F5 text19 CODE >21:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F6 text19 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+F9 text19 CODE >25:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+FA text19 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+FB text19 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+FC text19 CODE >28:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+FD text19 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+100 text19 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+101 text19 CODE >33:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+D00 text18 CODE >39:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+D01 text18 CODE >40:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+D07 text18 CODE >41:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+D0B text18 CODE >42:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DAE text17 CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DAF text17 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DB1 text17 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DB4 text17 CODE >52:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DBF text17 CODE >53:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+DDD text17 CODE >54:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\UART.c
+5 text16 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+6 text16 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+8 text16 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+F text16 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+13 text16 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+19 text16 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+19 text16 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+20 text16 CODE >55:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+22 text16 CODE >56:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+27 text16 CODE >59:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+2B text16 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 493 text15 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 493 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 49A text15 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
@@ -286,221 +298,232 @@ E43 text16 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\
 7E7 text15 CODE >201:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 7EB text15 CODE >203:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 7F3 text15 CODE >205:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
-156 text14 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-156 text14 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-163 text14 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-16C text14 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-181 text14 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-182 text14 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-18A text14 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-18C text14 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-190 text14 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-198 text14 CODE >57:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1A1 text14 CODE >58:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1AA text14 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1B1 text14 CODE >63:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1BA text14 CODE >64:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1BC text14 CODE >62:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1BC text14 CODE >65:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1C1 text14 CODE >67:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1C6 text14 CODE >68:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-1D1 text14 CODE >70:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-EC0 text13 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EC0 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EC2 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EC8 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-ECA text13 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-ECB text13 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-ED2 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-ED6 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EDA text13 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EE1 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EEB text13 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EF1 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EF2 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EF9 text13 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-EFF text13 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-F03 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
-E44 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E44 text12 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E4A text12 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E4C text12 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E4D text12 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E54 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E58 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E5C text12 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E66 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E6C text12 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E73 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E79 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-E7D text12 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
-DF8 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-DF8 text11 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-DFA text11 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-DFE text11 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-E04 text11 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-E0B text11 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-E12 text11 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-E18 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-E1C text11 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
-2FA text10 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-2FB text10 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-304 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-313 text10 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-314 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-31C text10 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-31C text10 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-324 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-32D text10 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-331 text10 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-332 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-336 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-33F text10 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-346 text10 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-34A text10 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-358 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-361 text10 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-361 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-368 text10 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-36A text10 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-373 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-37D text10 CODE >37:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-381 text10 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-389 text10 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-38B text10 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-3A1 text10 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-3AA text10 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-3AB text10 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-3B3 text10 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-25C text9 CODE >105:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-25C text9 CODE >109:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-296 text9 CODE >110:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2A9 text9 CODE >112:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2AE text9 CODE >113:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2B2 text9 CODE >114:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2C7 text9 CODE >116:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2DA text9 CODE >117:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2DF text9 CODE >118:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2F2 text9 CODE >119:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2F7 text9 CODE >120:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2F8 text9 CODE >121:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-2F9 text9 CODE >122:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-80 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-80 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-81 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-85 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-8A text8 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-8C text8 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-90 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-95 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-99 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-9B text8 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-A1 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-A3 text8 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-A4 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-AB text8 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-AF text8 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-B3 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-BA text8 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-C4 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-CA text8 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-CB text8 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-D2 text8 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-D8 text8 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-DD text8 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-E2 text8 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-E6 text8 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-F49 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F49 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F4A text7 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F4E text7 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F53 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F55 text7 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F59 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F5E text7 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F64 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F66 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F67 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F6E text7 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F72 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F76 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F80 text7 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F86 text7 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F8D text7 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F93 text7 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F98 text7 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-F9D text7 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-FA1 text7 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
-DA6 text6 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DA7 text6 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DA8 text6 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DAC text6 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DB0 text6 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DB2 text6 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DB4 text6 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DB9 text6 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-DBA text6 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
-FA2 text5 CODE >124:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FA5 text5 CODE >128:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FBB text5 CODE >129:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FC0 text5 CODE >130:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FCF text5 CODE >132:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FE6 text5 CODE >133:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FFD text5 CODE >134:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FFE text5 CODE >135:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-FFF text5 CODE >136:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-4 text4 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-5 text4 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-8 text4 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-C text4 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-E text4 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-F text4 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-10 text4 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-13 text4 CODE >23:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-14 text4 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-14 text4 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-19 text4 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D81 text3 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D81 text3 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D87 text3 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D88 text2 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D88 text2 CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D8D text2 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D90 text2 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D7B text1 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D7C text1 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-D80 text1 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
-3B4 maintext CODE >56:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3B4 maintext CODE >58:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3B7 maintext CODE >59:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3B8 maintext CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3BB maintext CODE >62:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3BC maintext CODE >64:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3BE maintext CODE >66:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3C7 maintext CODE >68:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3CC maintext CODE >69:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3DD maintext CODE >71:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3E5 maintext CODE >72:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3EE maintext CODE >74:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3F6 maintext CODE >76:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-3FA maintext CODE >78:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-400 maintext CODE >79:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-40A maintext CODE >81:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-41B maintext CODE >82:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-424 maintext CODE >83:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-42D maintext CODE >85:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-431 maintext CODE >86:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-437 maintext CODE >87:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-441 maintext CODE >88:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-44C maintext CODE >89:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-455 maintext CODE >90:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-45B maintext CODE >92:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-45F maintext CODE >93:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-465 maintext CODE >94:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-46F maintext CODE >95:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-47A maintext CODE >96:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-483 maintext CODE >97:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
-489 maintext CODE >98:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+102 text14 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+102 text14 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+10F text14 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+118 text14 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+12D text14 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+12E text14 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+136 text14 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+138 text14 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+13C text14 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+144 text14 CODE >57:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+14D text14 CODE >58:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+156 text14 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+15D text14 CODE >63:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+166 text14 CODE >64:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+168 text14 CODE >62:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+168 text14 CODE >65:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+16D text14 CODE >67:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+172 text14 CODE >68:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+17D text14 CODE >70:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+E5A text13 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E5A text13 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E5C text13 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E62 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E64 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E65 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E6C text13 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E70 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E74 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E7B text13 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E85 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E8B text13 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E8C text13 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E93 text13 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E99 text13 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+E9D text13 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+DDE text12 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DDE text12 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DE4 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DE6 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DE7 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DEE text12 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DF2 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+DF6 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+E00 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+E06 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+E0D text12 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+E13 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+E17 text12 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+D89 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D89 text11 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D8B text11 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D8F text11 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D95 text11 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D9C text11 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+DA3 text11 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+DA9 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+DAD text11 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+2A6 text10 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2A7 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2B0 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2BF text10 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2C0 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2C8 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2C8 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2D0 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2D9 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2DD text10 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2DE text10 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2E2 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2EB text10 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2F2 text10 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2F6 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+304 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+30D text10 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+30D text10 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+314 text10 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+316 text10 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+31F text10 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+329 text10 CODE >37:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+32D text10 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+335 text10 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+337 text10 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+34D text10 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+356 text10 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+357 text10 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+35F text10 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+208 text9 CODE >115:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+208 text9 CODE >119:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+242 text9 CODE >120:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+255 text9 CODE >122:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+25A text9 CODE >123:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+25E text9 CODE >124:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+273 text9 CODE >126:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+286 text9 CODE >127:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+28B text9 CODE >128:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+29E text9 CODE >129:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+2A3 text9 CODE >130:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+2A4 text9 CODE >131:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+2A5 text9 CODE >132:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+2C text8 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+2C text8 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+2D text8 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+31 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+36 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+38 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+3C text8 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+41 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+45 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+47 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+4D text8 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+4F text8 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+50 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+57 text8 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+5B text8 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+5F text8 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+66 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+70 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+76 text8 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+77 text8 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+7E text8 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+84 text8 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+89 text8 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+8E text8 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+92 text8 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+EE3 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EE3 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EE4 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EE8 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EED text7 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EEF text7 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EF3 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EF8 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+EFE text7 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F00 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F01 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F08 text7 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F0C text7 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F10 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F1A text7 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F20 text7 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F27 text7 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F2D text7 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F32 text7 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F37 text7 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F3B text7 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+D21 text6 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D22 text6 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D23 text6 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D27 text6 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D2B text6 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D2D text6 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D2F text6 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D34 text6 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+D35 text6 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8.c
+F3C text5 CODE >134:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F3F text5 CODE >138:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F55 text5 CODE >139:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F5A text5 CODE >140:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F69 text5 CODE >142:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F80 text5 CODE >143:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F97 text5 CODE >144:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F98 text5 CODE >145:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+F99 text5 CODE >146:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+D36 text4 CODE >12:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D37 text4 CODE >14:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D3A text4 CODE >15:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D3E text4 CODE >17:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D40 text4 CODE >18:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D41 text4 CODE >19:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D42 text4 CODE >22:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D45 text4 CODE >23:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D46 text4 CODE >24:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D46 text4 CODE >26:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+D4B text4 CODE >27:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CF0 text3 CODE >29:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CF0 text3 CODE >31:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CF6 text3 CODE >32:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CF7 text2 CODE >47:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CF7 text2 CODE >49:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CFC text2 CODE >50:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CFF text2 CODE >51:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CEA text1 CODE >34:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CEB text1 CODE >36:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+CEF text1 CODE >37:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\spi.c
+360 maintext CODE >56:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+360 maintext CODE >58:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+363 maintext CODE >59:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+364 maintext CODE >61:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+367 maintext CODE >62:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+368 maintext CODE >64:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+36A maintext CODE >66:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+373 maintext CODE >68:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+378 maintext CODE >69:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+389 maintext CODE >71:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+391 maintext CODE >72:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+39A maintext CODE >74:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3A2 maintext CODE >76:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3A6 maintext CODE >78:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3AC maintext CODE >79:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3B6 maintext CODE >80:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3C7 maintext CODE >81:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3D0 maintext CODE >82:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3D9 maintext CODE >83:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3E5 maintext CODE >84:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3EB maintext CODE >85:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3F1 maintext CODE >86:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3F7 maintext CODE >88:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+3FB maintext CODE >89:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+401 maintext CODE >90:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+40B maintext CODE >91:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+416 maintext CODE >92:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+41F maintext CODE >93:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+425 maintext CODE >94:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+431 maintext CODE >95:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+437 maintext CODE >96:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+43D maintext CODE >98:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+441 maintext CODE >99:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+447 maintext CODE >100:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+451 maintext CODE >101:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+45C maintext CODE >102:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+465 maintext CODE >103:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+46B maintext CODE >104:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+471 maintext CODE >105:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+47D maintext CODE >106:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+483 maintext CODE >107:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
+489 maintext CODE >108:D:\programacion\PIC\Proyecto_1_SPI_Digital_2\Master.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -521,22 +544,22 @@ __Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-_LcdWriteChar 1B22 0 CODE 0 text20 dist/default/production\Master.X.production.o
+_LcdWriteChar 1A18 0 CODE 0 text22 dist/default/production\Master.X.production.o
 spiInit@sTransmitEdge 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __size_of_adcToString 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_LcdCmd 1BAA 0 CODE 0 text23 dist/default/production\Master.X.production.o
+__end_of_LcdCmd 1ACC 0 CODE 0 text25 dist/default/production\Master.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-_main 768 0 CODE 0 maintext dist/default/production\Master.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+_main 6C0 0 CODE 0 maintext dist/default/production\Master.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Master.X.production.o
-start 0 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
+start 0 0 CODE 0 init C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@sign 2D 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@temp 38 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
-_LcdSetCursor 1BAA 0 CODE 0 text21 dist/default/production\Master.X.production.o
+_LcdSetCursor 1ACC 0 CODE 0 text23 dist/default/production\Master.X.production.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of___awmod 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of___flmul 0 0 ABS 0 - dist/default/production\Master.X.production.o
@@ -546,33 +569,35 @@ __size_of___lldiv 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\Master.X.production.o
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
+_UARTSendString 1B5C 0 CODE 0 text17 dist/default/production\Master.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 LcdWriteString@value 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __size_of_LcdWriteChar 0 0 ABS 0 - dist/default/production\Master.X.production.o
-__end_of_int2String 2000 0 CODE 0 text5 dist/default/production\Master.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
+__end_of_int2String 1F34 0 CODE 0 text5 dist/default/production\Master.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
 ___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __size_of_LcdSetCursor 0 0 ABS 0 - dist/default/production\Master.X.production.o
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_LcdWriteChar 1B4C 0 CODE 0 text20 dist/default/production\Master.X.production.o
+__end_of_LcdWriteChar 1A42 0 CODE 0 text22 dist/default/production\Master.X.production.o
 ___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 adcToString@digito 4D 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 _ANSELH 189 0 ABS 0 - dist/default/production\Master.X.production.o
-__end_of__Umul8_16 1C88 0 CODE 0 text16 dist/default/production\Master.X.production.o
+__end_of__Umul8_16 58 0 CODE 0 text16 dist/default/production\Master.X.production.o
 ___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __size_of__Umul8_16 0 0 ABS 0 - dist/default/production\Master.X.production.o
-__end_of___bmul 1B76 0 CODE 0 text6 dist/default/production\Master.X.production.o
-__end_of___wmul 1C3A 0 CODE 0 text11 dist/default/production\Master.X.production.o
-__end_of_LcdSetCursor 1BF0 0 CODE 0 text21 dist/default/production\Master.X.production.o
+__end_of_UARTSendString 1BBC 0 CODE 0 text17 dist/default/production\Master.X.production.o
+__end_of___bmul 1A6C 0 CODE 0 text6 dist/default/production\Master.X.production.o
+__end_of___wmul 1B5C 0 CODE 0 text11 dist/default/production\Master.X.production.o
+__end_of_LcdSetCursor 1B12 0 CODE 0 text23 dist/default/production\Master.X.production.o
 __size_of_spiInit 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of_spiRead 0 0 ABS 0 - dist/default/production\Master.X.production.o
 int2String@value 25 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
@@ -580,25 +605,25 @@ __Lmaintext 0 0 ABS 0 maintext -
 ___bmul@multiplier 73 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__end_of___awdiv 1CE 0 CODE 0 text8 dist/default/production\Master.X.production.o
-__end_of___awmod 1F44 0 CODE 0 text7 dist/default/production\Master.X.production.o
-__Umul8_16 1C3A 0 CODE 0 text16 dist/default/production\Master.X.production.o
+__end_of___awdiv 126 0 CODE 0 text8 dist/default/production\Master.X.production.o
+__end_of___awmod 1E78 0 CODE 0 text7 dist/default/production\Master.X.production.o
+__Umul8_16 A 0 CODE 0 text16 dist/default/production\Master.X.production.o
 __end_of___flmul FE8 0 CODE 0 text15 dist/default/production\Master.X.production.o
-__end_of___fltol 3A4 0 CODE 0 text14 dist/default/production\Master.X.production.o
-__end_of___lldiv 100 0 CODE 0 text18 dist/default/production\Master.X.production.o
+__end_of___fltol 2FC 0 CODE 0 text14 dist/default/production\Master.X.production.o
+__end_of___lldiv 2000 0 CODE 0 text20 dist/default/production\Master.X.production.o
 LcdSetCursor@row 78 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__end_of___lwdiv 1E08 0 CODE 0 text13 dist/default/production\Master.X.production.o
-__end_of___lwmod 1CFC 0 CODE 0 text12 dist/default/production\Master.X.production.o
+__end_of___lwdiv 1D3C 0 CODE 0 text13 dist/default/production\Master.X.production.o
+__end_of___lwmod 1C30 0 CODE 0 text12 dist/default/production\Master.X.production.o
 _valueADC 57 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
 __size_of_LcdWriteString 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
+___stackhi 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+___stacklo 0 0 ABS 0 - C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___flmul@b 20 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 _cadenaADC 56 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
-_LcdCmd 1B76 0 CODE 0 text23 dist/default/production\Master.X.production.o
+_LcdCmd 1A98 0 CODE 0 text25 dist/default/production\Master.X.production.o
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 spiInit@sDataSample 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
@@ -607,7 +632,7 @@ _valueCounter 55 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.
 adcToString@salida 48 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\Master.X.production.o
 ___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-_adcToString 4B8 0 CODE 0 text9 dist/default/production\Master.X.production.o
+_adcToString 410 0 CODE 0 text9 dist/default/production\Master.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 _SSPBUF 13 0 ABS 0 - dist/default/production\Master.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\Master.X.production.o
@@ -615,7 +640,7 @@ _TRISC3 43B 0 ABS 0 - dist/default/production\Master.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of_LcdInit 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of_LcdPort 0 0 ABS 0 - dist/default/production\Master.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
+___int_sp 0 0 STACK 2 stack C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
 __size_of_LcdCmd 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -631,8 +656,8 @@ __Hmaintext 0 0 ABS 0 maintext -
 ___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__end_of_spiInit 34 0 CODE 0 text4 dist/default/production\Master.X.production.o
-__end_of_spiRead 1B22 0 CODE 0 text2 dist/default/production\Master.X.production.o
+__end_of_spiInit 1A98 0 CODE 0 text4 dist/default/production\Master.X.production.o
+__end_of_spiRead 1A00 0 CODE 0 text2 dist/default/production\Master.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
 _valorTemp 52 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
@@ -661,8 +686,8 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-___bmul 1B4C 0 CODE 0 text6 dist/default/production\Master.X.production.o
-___wmul 1BF0 0 CODE 0 text11 dist/default/production\Master.X.production.o
+___bmul 1A42 0 CODE 0 text6 dist/default/production\Master.X.production.o
+___wmul 1B12 0 CODE 0 text11 dist/default/production\Master.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _RD0 40 0 ABS 0 - dist/default/production\Master.X.production.o
@@ -680,57 +705,65 @@ __S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 LcdPort@value 71 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-___xxtofl 5F4 0 CODE 0 text10 dist/default/production\Master.X.production.o
+UARTSendString@max_length 71 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
+_UARTSendChar 1A00 0 CODE 0 text18 dist/default/production\Master.X.production.o
+___xxtofl 54C 0 CODE 0 text10 dist/default/production\Master.X.production.o
+UARTSendString@i 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\Master.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\s44c.o
-__end_of___xxtofl 768 0 CODE 0 text10 dist/default/production\Master.X.production.o
-__end_of_LcdInit 1E92 0 CODE 0 text22 dist/default/production\Master.X.production.o
-__end_of_LcdPort 4B8 0 CODE 0 text24 dist/default/production\Master.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ANGELO~1\AppData\Local\Temp\sggo.o
+__end_of___xxtofl 6C0 0 CODE 0 text10 dist/default/production\Master.X.production.o
+__end_of_LcdInit 1DC6 0 CODE 0 text24 dist/default/production\Master.X.production.o
+__end_of_LcdPort 410 0 CODE 0 text26 dist/default/production\Master.X.production.o
 __size_of___bmul 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 ___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 _RCSTAbits 18 0 ABS 0 - dist/default/production\Master.X.production.o
+__size_of_UARTSendChar 0 0 ABS 0 - dist/default/production\Master.X.production.o
 LcdSetCursor@column 75 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__ptext10 5F4 0 CODE 0 text10 dist/default/production\Master.X.production.o
-__ptext11 1BF0 0 CODE 0 text11 dist/default/production\Master.X.production.o
-__ptext12 1C88 0 CODE 0 text12 dist/default/production\Master.X.production.o
-__ptext13 1D80 0 CODE 0 text13 dist/default/production\Master.X.production.o
-__ptext14 2AC 0 CODE 0 text14 dist/default/production\Master.X.production.o
+__ptext10 54C 0 CODE 0 text10 dist/default/production\Master.X.production.o
+__ptext11 1B12 0 CODE 0 text11 dist/default/production\Master.X.production.o
+__ptext12 1BBC 0 CODE 0 text12 dist/default/production\Master.X.production.o
+__ptext13 1CB4 0 CODE 0 text13 dist/default/production\Master.X.production.o
+__ptext14 204 0 CODE 0 text14 dist/default/production\Master.X.production.o
 __ptext15 926 0 CODE 0 text15 dist/default/production\Master.X.production.o
-__ptext16 1C3A 0 CODE 0 text16 dist/default/production\Master.X.production.o
-__ptext17 1CE 0 CODE 0 text17 dist/default/production\Master.X.production.o
-__ptext18 34 0 CODE 0 text18 dist/default/production\Master.X.production.o
-__ptext19 1CFC 0 CODE 0 text19 dist/default/production\Master.X.production.o
-__ptext20 1B22 0 CODE 0 text20 dist/default/production\Master.X.production.o
-__ptext21 1BAA 0 CODE 0 text21 dist/default/production\Master.X.production.o
-__ptext22 1E08 0 CODE 0 text22 dist/default/production\Master.X.production.o
-__ptext23 1B76 0 CODE 0 text23 dist/default/production\Master.X.production.o
-__ptext24 3A4 0 CODE 0 text24 dist/default/production\Master.X.production.o
-___awdiv 100 0 CODE 0 text8 dist/default/production\Master.X.production.o
-___awmod 1E92 0 CODE 0 text7 dist/default/production\Master.X.production.o
+__ptext16 A 0 CODE 0 text16 dist/default/production\Master.X.production.o
+__ptext17 1B5C 0 CODE 0 text17 dist/default/production\Master.X.production.o
+__ptext18 1A00 0 CODE 0 text18 dist/default/production\Master.X.production.o
+__ptext19 126 0 CODE 0 text19 dist/default/production\Master.X.production.o
+__ptext20 1F34 0 CODE 0 text20 dist/default/production\Master.X.production.o
+__ptext21 1C30 0 CODE 0 text21 dist/default/production\Master.X.production.o
+__ptext22 1A18 0 CODE 0 text22 dist/default/production\Master.X.production.o
+__ptext23 1ACC 0 CODE 0 text23 dist/default/production\Master.X.production.o
+__ptext24 1D3C 0 CODE 0 text24 dist/default/production\Master.X.production.o
+__ptext25 1A98 0 CODE 0 text25 dist/default/production\Master.X.production.o
+__ptext26 2FC 0 CODE 0 text26 dist/default/production\Master.X.production.o
+___awdiv 58 0 CODE 0 text8 dist/default/production\Master.X.production.o
+___awmod 1DC6 0 CODE 0 text7 dist/default/production\Master.X.production.o
 ___flmul 926 0 CODE 0 text15 dist/default/production\Master.X.production.o
-___fltol 2AC 0 CODE 0 text14 dist/default/production\Master.X.production.o
-___lldiv 34 0 CODE 0 text18 dist/default/production\Master.X.production.o
-___lwdiv 1D80 0 CODE 0 text13 dist/default/production\Master.X.production.o
-___lwmod 1C88 0 CODE 0 text12 dist/default/production\Master.X.production.o
-__pmaintext 768 0 CODE 0 maintext dist/default/production\Master.X.production.o
+___fltol 204 0 CODE 0 text14 dist/default/production\Master.X.production.o
+___lldiv 1F34 0 CODE 0 text20 dist/default/production\Master.X.production.o
+___lwdiv 1CB4 0 CODE 0 text13 dist/default/production\Master.X.production.o
+___lwmod 1BBC 0 CODE 0 text12 dist/default/production\Master.X.production.o
+__pmaintext 6C0 0 CODE 0 maintext dist/default/production\Master.X.production.o
 LcdWriteChar@value 73 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 UARTInit@BRGH 24 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
+__size_of_UARTSendString 0 0 ABS 0 - dist/default/production\Master.X.production.o
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
+__end_of_UARTSendChar 1A18 0 CODE 0 text18 dist/default/production\Master.X.production.o
 __end_of__stringtab 1020 0 STRING 0 strings dist/default/production\Master.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-_LcdWriteString 1CFC 0 CODE 0 text19 dist/default/production\Master.X.production.o
+_LcdWriteString 1C30 0 CODE 0 text21 dist/default/production\Master.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 _PIR1bits C 0 ABS 0 - dist/default/production\Master.X.production.o
@@ -751,23 +784,24 @@ ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.pr
 ?___lldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
+UARTSendString@str 73 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
 int2String@digito 24 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
-__end_of_adcToString 5F4 0 CODE 0 text9 dist/default/production\Master.X.production.o
+__end_of_adcToString 54C 0 CODE 0 text9 dist/default/production\Master.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 ___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__ptext1 1AF6 0 CODE 0 text1 dist/default/production\Master.X.production.o
-__ptext2 1B10 0 CODE 0 text2 dist/default/production\Master.X.production.o
-__ptext3 1B02 0 CODE 0 text3 dist/default/production\Master.X.production.o
-__ptext4 8 0 CODE 0 text4 dist/default/production\Master.X.production.o
-__ptext5 1F44 0 CODE 0 text5 dist/default/production\Master.X.production.o
-__ptext6 1B4C 0 CODE 0 text6 dist/default/production\Master.X.production.o
-__ptext7 1E92 0 CODE 0 text7 dist/default/production\Master.X.production.o
-__ptext8 100 0 CODE 0 text8 dist/default/production\Master.X.production.o
-__ptext9 4B8 0 CODE 0 text9 dist/default/production\Master.X.production.o
+__ptext1 19D4 0 CODE 0 text1 dist/default/production\Master.X.production.o
+__ptext2 19EE 0 CODE 0 text2 dist/default/production\Master.X.production.o
+__ptext3 19E0 0 CODE 0 text3 dist/default/production\Master.X.production.o
+__ptext4 1A6C 0 CODE 0 text4 dist/default/production\Master.X.production.o
+__ptext5 1E78 0 CODE 0 text5 dist/default/production\Master.X.production.o
+__ptext6 1A42 0 CODE 0 text6 dist/default/production\Master.X.production.o
+__ptext7 1DC6 0 CODE 0 text7 dist/default/production\Master.X.production.o
+__ptext8 58 0 CODE 0 text8 dist/default/production\Master.X.production.o
+__ptext9 410 0 CODE 0 text9 dist/default/production\Master.X.production.o
 ?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-_spiInit 8 0 CODE 0 text4 dist/default/production\Master.X.production.o
-_spiRead 1B10 0 CODE 0 text2 dist/default/production\Master.X.production.o
+_spiInit 1A6C 0 CODE 0 text4 dist/default/production\Master.X.production.o
+_spiRead 19EE 0 CODE 0 text2 dist/default/production\Master.X.production.o
 spiWrite@dat 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 LcdCmd@value 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 _cadenaTemp 53 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
@@ -775,17 +809,18 @@ __Lpowerup 0 0 CODE 0 powerup -
 ?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 spiInit@sType 73 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
+UARTSendChar@c 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___fltol@sign1 43 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 __size_of_UARTInit 0 0 ABS 0 - dist/default/production\Master.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__end_of_LcdWriteString 1D80 0 CODE 0 text19 dist/default/production\Master.X.production.o
+__end_of_LcdWriteString 1CB4 0 CODE 0 text21 dist/default/production\Master.X.production.o
 ___fltol@f1 3A 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\Master.X.production.o
 __size_of_spiWrite 0 0 ABS 0 - dist/default/production\Master.X.production.o
 ___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-_spiReceiveWait 1B02 0 CODE 0 text3 dist/default/production\Master.X.production.o
+_spiReceiveWait 19E0 0 CODE 0 text3 dist/default/production\Master.X.production.o
 adcToString@value 45 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 ___lldiv@quotient 79 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
@@ -804,23 +839,23 @@ _TRISE 89 0 ABS 0 - dist/default/production\Master.X.production.o
 _TXREG 19 0 ABS 0 - dist/default/production\Master.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_UARTInit 1CE 0 CODE 0 text17 dist/default/production\Master.X.production.o
+_UARTInit 126 0 CODE 0 text19 dist/default/production\Master.X.production.o
 _SSPSTATbits 94 0 ABS 0 - dist/default/production\Master.X.production.o
-_LcdInit 1E08 0 CODE 0 text22 dist/default/production\Master.X.production.o
-_LcdPort 3A4 0 CODE 0 text24 dist/default/production\Master.X.production.o
+_LcdInit 1D3C 0 CODE 0 text24 dist/default/production\Master.X.production.o
+_LcdPort 2FC 0 CODE 0 text26 dist/default/production\Master.X.production.o
 UARTInit@baud_rate 20 0 BANK0 1 cstackBANK0 dist/default/production\Master.X.production.o
 spiInit@sClockIdle 71 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __initialization FE8 0 CODE 0 cinit dist/default/production\Master.X.production.o
 ___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 ___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
 __pbssBANK0 52 0 BANK0 1 bssBANK0 dist/default/production\Master.X.production.o
-__end_of_UARTInit 2AC 0 CODE 0 text17 dist/default/production\Master.X.production.o
-_spiWrite 1AF6 0 CODE 0 text1 dist/default/production\Master.X.production.o
+__end_of_UARTInit 204 0 CODE 0 text19 dist/default/production\Master.X.production.o
+_spiWrite 19D4 0 CODE 0 text1 dist/default/production\Master.X.production.o
 __pstrings 1000 0 STRING 0 strings dist/default/production\Master.X.production.o
 ___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\Master.X.production.o
-__end_of_spiReceiveWait 1B10 0 CODE 0 text3 dist/default/production\Master.X.production.o
-__end_of_spiWrite 1B02 0 CODE 0 text1 dist/default/production\Master.X.production.o
-_int2String 1F44 0 CODE 0 text5 dist/default/production\Master.X.production.o
+__end_of_spiReceiveWait 19EE 0 CODE 0 text3 dist/default/production\Master.X.production.o
+__end_of_spiWrite 19E0 0 CODE 0 text1 dist/default/production\Master.X.production.o
+_int2String 1E78 0 CODE 0 text5 dist/default/production\Master.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -847,31 +882,33 @@ _int2String 1F44 0 CODE 0 text5 dist/default/production\Master.X.production.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7F4 FE8 C 2
-text1 0 D7B 1AF6 6 2
-text2 0 D88 1B10 9 2
-text3 0 D81 1B02 7 2
-text4 0 4 8 16 2
-text5 0 FA2 1F44 5E 2
-text6 0 DA6 1B4C 15 2
-text7 0 F49 1E92 59 2
-text8 0 80 100 67 2
-text9 0 25C 4B8 9E 2
-text10 0 2FA 5F4 BA 2
-text11 0 DF8 1BF0 25 2
-text12 0 E44 1C88 3A 2
-text13 0 EC0 1D80 44 2
-text14 0 156 2AC 7C 2
+text1 0 CEA 19D4 6 2
+text2 0 CF7 19EE 9 2
+text3 0 CF0 19E0 7 2
+text4 0 D36 1A6C 16 2
+text5 0 F3C 1E78 5E 2
+text6 0 D21 1A42 15 2
+text7 0 EE3 1DC6 59 2
+text8 0 2C 58 67 2
+text9 0 208 410 9E 2
+text10 0 2A6 54C BA 2
+text11 0 D89 1B12 25 2
+text12 0 DDE 1BBC 3A 2
+text13 0 E5A 1CB4 44 2
+text14 0 102 204 7C 2
 text15 0 493 926 361 2
-text16 0 E1D 1C3A 27 2
-text17 0 E7 1CE 6F 2
-text18 0 1A 34 66 2
-text19 0 E7E 1CFC 42 2
-text20 0 D91 1B22 15 2
-text21 0 DD5 1BAA 23 2
-text22 0 F04 1E08 45 2
-text23 0 DBB 1B76 1A 2
-text24 0 1D2 3A4 8A 2
-maintext 0 3B4 768 DF 2
+text16 0 5 A 27 2
+text17 0 DAE 1B5C 30 2
+text18 0 D00 1A00 C 2
+text19 0 93 126 6F 2
+text20 0 F9A 1F34 66 2
+text21 0 E18 1C30 42 2
+text22 0 D0C 1A18 15 2
+text23 0 D66 1ACC 23 2
+text24 0 E9E 1D3C 45 2
+text25 0 D4C 1A98 1A 2
+text26 0 17E 2FC 8A 2
+maintext 0 360 6C0 133 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 38 1
 reset_vec 0 0 0 3 2

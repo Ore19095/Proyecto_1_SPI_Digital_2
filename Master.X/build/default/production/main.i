@@ -2781,10 +2781,13 @@ int main(){
 
       spiWrite('A');
       valueADC = spiRead();
-
       cadenaADC = adcToString(valueADC);
       LcdWriteString(cadenaADC);
       LcdWriteString("V ");
+      UARTSendString(cadenaADC,5);
+      UARTSendChar('V');
+      UARTSendChar(' ');
+      UARTSendChar(0xA);
 
       PORTA = 5;
       spiWrite('C');
@@ -2792,6 +2795,9 @@ int main(){
       cadenaCounter = int2String(valueCounter);
       LcdWriteString(cadenaCounter) ;
       LcdWriteChar(' ');
+      UARTSendString(cadenaCounter,4);
+      UARTSendChar(' ');
+      UARTSendChar(0xA);
 
       PORTA = 3;
       spiWrite('T');
@@ -2800,6 +2806,10 @@ int main(){
       LcdWriteString(cadenaTemp);
       LcdWriteChar(0xDF);
       LcdWriteChar('C');
+      UARTSendString(cadenaTemp,4);
+      UARTSendChar('C');
+      UARTSendChar(' ');
+      UARTSendChar(0xA);
   }
 
 
